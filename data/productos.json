@@ -1,0 +1,148 @@
+[
+  {
+    "id": 1,
+    "nombre": "Laptop",
+    "precio": 15000,
+    "categoria": "Tecnología"
+  },
+  {
+    "id": 2,
+    "nombre": "Mouse inalámbrico",
+    "precio": 350,
+    "categoria": "Accesorios"
+  },
+  {
+    "id": 3,
+    "nombre": "Teclado mecánico",
+    "precio": 1200,
+    "categoria": "Accesorios"
+  },
+  {
+    "id": 4,
+    "nombre": "Monitor 24 pulgadas",
+    "precio": 3200,
+    "categoria": "Tecnología"
+  },
+  {
+    "id": 5,
+    "nombre": "Audífonos Bluetooth",
+    "precio": 900,
+    "categoria": "Audio"
+  },
+  {
+    "id": 6,
+    "nombre": "Silla ergonómica",
+    "precio": 4500,
+    "categoria": "Oficina"
+  },
+  {
+    "id": 7,
+    "nombre": "Mochila para laptop",
+    "precio": 950,
+    "categoria": "Accesorios"
+  },
+  {
+    "id": 8,
+    "nombre": "Cámara web HD",
+    "precio": 1100,
+    "categoria": "Tecnología"
+  },
+  {
+    "id": 9,
+    "nombre": "Impresora multifuncional",
+    "precio": 2800,
+    "categoria": "Oficina"
+  },
+  {
+    "id": 10,
+    "nombre": "Disco SSD 1TB",
+    "precio": 1800,
+    "categoria": "Almacenamiento"
+  },
+  {
+    "id": 11,
+    "nombre": "Memoria USB 64GB",
+    "precio": 250,
+    "categoria": "Almacenamiento"
+  },
+  {
+    "id": 12,
+    "nombre": "Tablet",
+    "precio": 7200,
+    "categoria": "Tecnología"
+  },
+  {
+    "id": 13,
+    "nombre": "Smartwatch",
+    "precio": 3500,
+    "categoria": "Wearables"
+  },
+  {
+    "id": 14,
+    "nombre": "Micrófono USB",
+    "precio": 1400,
+    "categoria": "Audio"
+  },
+  {
+    "id": 15,
+    "nombre": "Router WiFi",
+    "precio": 1600,
+    "categoria": "Redes"
+  },
+  {
+    "id": 16,
+    "nombre": "Proyector",
+    "precio": 6800,
+    "categoria": "Tecnología"
+  },
+  {
+    "id": 17,
+    "nombre": "Cable HDMI",
+    "precio": 180,
+    "categoria": "Accesorios"
+  },
+  {
+    "id": 18,
+    "nombre": "Base enfriadora para laptop",
+    "precio": 650,
+    "categoria": "Accesorios"
+  },
+  {
+    "id": 19,
+    "nombre": "Bocina portátil",
+    "precio": 1300,
+    "categoria": "Audio"
+  },
+  {
+    "id": 20,
+    "nombre": "Lámpara LED de escritorio",
+    "precio": 500,
+    "categoria": "Oficina"
+  },
+  {
+    "id": 21,
+    "nombre": "Bocina",
+    "precio": 345,
+    "categoria": "Audio"
+  },
+  {
+    "id": 22,
+    "nombre": "Mouse",
+    "precio": 600,
+    "categoria": "Accesorios"
+  },
+  {
+    "id": 23,
+    "nombre": "laptop",
+    "precio": 21635,
+    "categoria": "Computación",
+    "stock": 8
+  },
+  {
+    "id": 24,
+    "nombre": "Bocina",
+    "precio": 500,
+    "categoria": "Audio",
+    "stock": 7
+  }
+]

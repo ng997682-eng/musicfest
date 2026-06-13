@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <h1>Catálogo de Productos</h1>
+    <p>Template base para una aplicación web con frontend, backend y servicios REST.</p>
+  </header>
+
+  <nav class="tabs">
+  <button class="tab active" data-tab="inicio">Inicio</button>
+  <button class="tab" data-tab="productos">Productos</button>
+  <button class="tab" data-tab="agregar">Agregar producto</button>
+  <button class="tab" data-tab="buscar">Buscar</button>
+  <button class="tab" data-tab="estadisticas">Estadísticas</button>
+  <button class="tab" data-tab="acerca">Acerca del sistema</button>
+</nav>
+
+  <main class="contenedor">
+
+    <section id="inicio" class="tab-content active">
+      <h2>Inicio</h2>
+      <p>
+        Esta página sirve como base para construir una aplicación web.
+        Incluye navegación por pestañas, consulta de datos desde el backend,
+        formulario de registro, búsqueda y estadísticas.
+      </p>
+
+      <div class="panel-info">
+        <h3>¿Qué se puede modificar?</h3>
+        <ul>
+          <li>Los textos de cada sección.</li>
+          <li>Los campos del formulario.</li>
+          <li>El diseño visual en CSS.</li>
+          <li>Las rutas del backend.</li>
+          <li>Las funciones de JavaScript.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="productos" class="tab-content">
+      <div class="titulo-seccion">
+        <div>
+          <h2>Productos registrados</h2>
+          <p>Consulta los productos guardados en el archivo <strong>productos.json</strong>.</p>
+        </div>
+        <button id="btn-cargar-productos">Cargar productos</button>
+      </div>
+
+      <div id="lista-productos" class="productos-grid"></div>
+    </section>
+
+    <section id="agregar" class="tab-content">
+      <h2>Agregar producto</h2>
+      <p>Captura la información del producto y envíala al backend.</p>
+
+      <form id="form-producto" class="formulario">
+        <label for="nombre">Nombre del producto</label>
+        <input type="text" id="nombre" placeholder="Ejemplo: Laptop" required>
+
+         <input type="hidden" id="producto-id">
+
+        <label for="precio">Precio</label>
+        <input type="number" id="precio" placeholder="Ejemplo: 12500" min="1" required>
+
+        <label for="categoria">Categoría</label>
+        <input type="text" id="categoria" placeholder="Ejemplo: Computación" required>
+
+        <label for="stock">Stock</label>
+        <input type="number" id="stock" placeholder="Ejemplo: 10" min="0" required>
+
+        <button type="submit" id="btn-guardar">Guardar producto</button>
+      </form>
+      <button type="button" id="btn-cancelar-edicion">
+Cancelar edición
+</button>
+
+      <p id="mensaje"></p>
+    </section>
+
+    <section id="buscar" class="tab-content">
+      <h2>Buscar producto</h2>
+      <p>Busca productos por nombre o categoría.</p>
+
+      <div class="barra-busqueda">
+        <input type="text" id="busqueda" placeholder="Ejemplo: computación">
+        <button id="btn-buscar">Buscar</button>
+      </div>
+
+      <div id="resultados-busqueda" class="productos-grid"></div>
+    </section>
+
+    <section id="estadisticas" class="tab-content">
+      <div class="titulo-seccion">
+        <div>
+          <h2>Estadísticas</h2>
+          <p>Calcula información general a partir de los productos registrados.</p>
+        </div>
+        <button id="btn-estadisticas">Calcular estadísticas</button>
+      </div>
+
+      <div id="resumen-estadisticas"></div>
+    </section>
+
+    <section id="acerca" class="tab-content">
+      <h2>Acerca del sistema</h2>
+      <p>
+        Este template usa HTML, CSS y JavaScript en el frontend.
+        El backend está construido con Express y organiza la lógica en rutas,
+        controladores y modelos.
+      </p>
+
+      <pre>
+        app.js
+        controllers/productos.controller.js
+        data/productos.json
+        models/producto.model.js
+        public/index.html
+        public/script.js
+        public/style.css
+        routes/productos.routes.js
+      </pre>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
