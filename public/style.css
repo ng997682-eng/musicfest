@@ -284,6 +284,15 @@ button:hover {
   margin-bottom: 0;
 }
 
+.numero-dashboard {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d94f8a;
+  margin-top: 10px;
+}
+
+
+
 pre {
   background: #450427;
   color: white;
