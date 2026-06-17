@@ -66,20 +66,19 @@
     </section>
 
     <section id="agregar" class="tab-content">
-      <h2>Agregar artista</h2>
-      <p>Registra artistas, escenarios y boletos disponibles para el festival.</p>
+      <h2>Agregar concierto</h2>
+      <p>Registra conciertos con artista, precio, recinto, ciudad y boletos disponibles.</p>
 
       <form id="form-producto" class="formulario">
-        <label for="nombre">Nombre del artista</label>
+        <label for="nombre">Artista</label>
         <input type="text" id="nombre" placeholder="Ejemplo: Shakira" required>
          <input type="hidden" id="producto-id">
 
         <label for="precio">Precio del boleto</label>
         <input type="number" id="precio" placeholder="Ejemplo: 1800" min="1" required>
        
-        <label for="categoria">Día y escenario</label>
-        <input type="text" id="categoria" placeholder="Ejemplo: Día 1 - Main Stage" required>
-
+       <label for="categoria">Recinto y ciudad</label>
+        <input type="text" id="categoria" placeholder="Ejemplo: Estadio GNP Seguros - Ciudad de México"
        <label for="stock">Boletos disponibles</label>
       <input type="number" id="stock" placeholder="Ejemplo: 5000" min="0" required>
         
