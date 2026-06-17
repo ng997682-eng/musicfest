@@ -229,22 +229,22 @@ mensaje.className = "mensaje-exito";
 }
 
   resumenEstadisticas.innerHTML = `
-    <div class="estadistica">
-      <strong>Total de artistas:</strong> ${totalProductos}
-    </div>
+  <div class="estadistica">
+    <strong>Total de conciertos:</strong> ${totalProductos}
+  </div>
 
-    <div class="estadistica">
-      <strong>Precio promedio del boleto:</strong> $${precioPromedio.toFixed(2)}
-    </div>
+  <div class="estadistica">
+    <strong>Precio promedio del boleto:</strong> $${precioPromedio.toFixed(2)}
+  </div>
 
-    <div class="estadistica">
-      <strong>Artista con boleto más caro:</strong> ${productoMasCaro.nombre} ($${productoMasCaro.precio})
-    </div>
+  <div class="estadistica">
+    <strong>Concierto con boleto más caro:</strong> ${productoMasCaro.nombre}
+  </div>
 
-    <div class="estadistica">
-      <strong>Total de boletos disponibles:</strong> ${totalStock}
-    </div>
-  `;
+  <div class="estadistica">
+    <strong>Total de boletos disponibles:</strong> ${totalStock}
+  </div>
+`;
 });
 
 // 8. Carga inicial
