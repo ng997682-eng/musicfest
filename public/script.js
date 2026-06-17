@@ -95,19 +95,19 @@ function mostrarProductos(lista, contenedor) {
 
 
 // 5. función Editar artista(id)
-function editarArtista(id) {
-const artista = artistas.find(p => p.id === id);
+function editarProducto(id) {
+const producto = productos.find(p => p.id === id);
 
 if (!producto) {
 mensaje.textContent = "Concierto no encontrado.";
 mensaje.className = "mensaje-error";
 return;
 }
-productoId.value = artista.id;
-document.getElementById("nombre").value = artista.nombre;
-document.getElementById("precio").value = artista.precio;
-document.getElementById("categoria").value = artista.categoria;
-document.getElementById("stock").value = artista.stock;
+productoId.value = producto.id;
+document.getElementById("nombre").value = producto.nombre;
+document.getElementById("precio").value = producto.precio;
+document.getElementById("categoria").value = producto.categoria;
+document.getElementById("stock").value = producto.stock;
 btnGuardar.textContent = "Actualizar concierto";
 mensaje.textContent = "Editando concierto. Modifica los datos y guarda los cambios.";
 mensaje.className = "mensaje-exito";
@@ -309,19 +309,6 @@ const recintoMasUsado = Object.keys(conteoRecintos).reduce((a, b) =>
   conteoRecintos[a] > conteoRecintos[b] ? a : b
 );
 
-
-async function editarProducto(id) {
-    const respuesta = await fetch(`/productos/${id}`);
-    const producto = await respuesta.json();
-
-    document.getElementById("productoId").value = producto.id;
-    document.getElementById("nombre").value = producto.nombre;
-    document.getElementById("precio").value = producto.precio;
-    document.getElementById("categoria").value = producto.categoria;
-    document.getElementById("stock").value = producto.stock;
-
-    btnGuardar.textContent = "Guardar artista";
-}
   //Cancelar Edición
 btnCancelarEdicion.addEventListener("click", cancelarEdicion);
 function cancelarEdicion() {
