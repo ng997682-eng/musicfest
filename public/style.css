@@ -107,11 +107,17 @@ body {
 }
 
 
-.producto-card { 
-  border: 1px solid #ddd;
-  border-radius: 12px;
+.producto-card {
+  border: 1px solid #f3a6c9;
+  border-radius: 16px;
   padding: 16px;
-  background: #ffd5f4;
+  background: #fff0f7;
+  box-shadow: 0 4px 12px rgba(196, 80, 130, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-4px);
 }
 
 .producto-card h3 {
