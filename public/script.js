@@ -81,10 +81,11 @@ function mostrarProductos(lista, contenedor) {
   <button type="button" onclick="actualizarStock(${producto.id})">
     Actualizar boletos
   </button>
-
+ 
   <button type="button" onclick="eliminarProducto(${producto.id})">
     Eliminar concierto
   </button>
+
 `;
 
     contenedor.appendChild(tarjeta);
@@ -237,7 +238,7 @@ formProducto.addEventListener("submit", async event => {
     mensaje.className = "mensaje-exito";
     formProducto.reset();
     productoId.value = "";
-    btnGuardar.textContent = "Guardar artista";
+    btnGuardar.textContent = "Guardar concierto";
     await obtenerProductos();
     cambiarPestana("productos");
 
