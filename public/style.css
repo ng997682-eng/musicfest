@@ -102,11 +102,25 @@ body {
 }
 
 .panel-info {
-  background: #f8d0d5;
-  border-left: 5px solid #e4548e;
-  padding: 16px;
-  border-radius: 8px;
+  background: #fff3f8;
+  border-left: 6px solid #d94f8a;
+  padding: 18px;
+  border-radius: 14px;
   margin-top: 20px;
+  box-shadow: 0 3px 10px rgba(217, 79, 138, 0.12);
+}
+
+.panel-info h3 {
+  margin-top: 0;
+  color: #b03060;
+}
+
+.panel-info ul {
+  padding-left: 20px;
+}
+
+.panel-info li {
+  margin-bottom: 8px;
 }
 
 .productos-grid {
