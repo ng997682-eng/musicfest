@@ -229,19 +229,19 @@ mensaje.className = "mensaje-exito";
 
   resumenEstadisticas.innerHTML = `
     <div class="estadistica">
-      <strong>Total de productos:</strong> ${totalProductos}
+      <strong>Total de artistas:</strong> ${totalProductos}
     </div>
 
     <div class="estadistica">
-      <strong>Precio promedio:</strong> $${precioPromedio.toFixed(2)}
+      <strong>Precio promedio del boleto:</strong> $${precioPromedio.toFixed(2)}
     </div>
 
     <div class="estadistica">
-      <strong>Producto más caro:</strong> ${productoMasCaro.nombre}
+      <strong>Artista con boleto más caro:</strong> ${productoMasCaro.nombre} ($${productoMasCaro.precio})
     </div>
 
     <div class="estadistica">
-      <strong>Stock total:</strong> ${totalStock}
+      <strong>Total de boletos disponibles:</strong> ${totalStock}
     </div>
   `;
 });
