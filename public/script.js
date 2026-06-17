@@ -175,9 +175,7 @@ btnBuscar.addEventListener("click", async () => {
          concierto.categoria.toLowerCase().includes(texto);
 });
 
-  });
-
-  mostrarProductos(filtrados, resultadosBusqueda);
+mostrarProductos(filtrados, resultadosBusqueda);
 });
 
 
