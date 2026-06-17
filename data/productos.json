@@ -2,113 +2,176 @@
   {
     "id": 1,
     "nombre": "Shakira",
-    "precio": 1800,
-    "categoria": "Día 1 - Main Stage",
+    "precio": 3500,
+    "categoria": "Estadio GNP Seguros - Ciudad de México",
     "stock": 5000
   },
   {
     "id": 2,
     "nombre": "Dua Lipa",
-    "precio": 1800,
-    "categoria": "Día 1 - Main Stage",
+    "precio": 3200,
+    "categoria": "Estadio GNP Seguros - Ciudad de México",
     "stock": 4800
   },
   {
     "id": 3,
     "nombre": "Aitana",
     "precio": 1800,
-    "categoria": "Día 1 - Sunset Stage",
-    "stock": 3500
+    "categoria": "Auditorio Nacional - Ciudad de México",
+    "stock": 3000
   },
   {
     "id": 4,
-    "nombre": "Olivia Rodrigo",
-    "precio": 1800,
-    "categoria": "Día 1 - Pop Stage",
-    "stock": 4200
-  },
-  {
-    "id": 5,
-    "nombre": "Kenia OS",
-    "precio": 1800,
-    "categoria": "Día 1 - Pop Stage",
-    "stock": 3000
-  },
-  {
-    "id": 6,
     "nombre": "Maná",
-    "precio": 1500,
-    "categoria": "Día 2 - Main Stage",
-    "stock": 5000
-  },
-  {
-    "id": 7,
-    "nombre": "Caifanes",
-    "precio": 1500,
-    "categoria": "Día 2 - Main Stage",
-    "stock": 4800
-  },
-  {
-    "id": 8,
-    "nombre": "Zoé",
-    "precio": 1500,
-    "categoria": "Día 2 - Rock Arena",
-    "stock": 4000
-  },
-  {
-    "id": 9,
-    "nombre": "El Tri",
-    "precio": 1500,
-    "categoria": "Día 2 - Rock Arena",
-    "stock": 3600
-  },
-  {
-    "id": 10,
-    "nombre": "The Killers",
-    "precio": 1500,
-    "categoria": "Día 2 - Main Stage",
-    "stock": 4500
-  },
-  {
-    "id": 11,
-    "nombre": "Bad Bunny",
-    "precio": 1700,
-    "categoria": "Día 3 - Main Stage",
+    "precio": 2500,
+    "categoria": "Estadio BBVA - Monterrey",
     "stock": 5200
   },
   {
-    "id": 12,
-    "nombre": "Peso Pluma",
+    "id": 5,
+    "nombre": "Caifanes",
+    "precio": 1900,
+    "categoria": "Estadio Ciudad de los Deportes - Ciudad de México",
+    "stock": 4100
+  },
+  {
+    "id": 6,
+    "nombre": "Zoé",
     "precio": 1700,
-    "categoria": "Día 3 - Main Stage",
+    "categoria": "Auditorio Nacional - Ciudad de México",
+    "stock": 3500
+  },
+  {
+    "id": 7,
+    "nombre": "El Tri",
+    "precio": 1200,
+    "categoria": "Estadio Ciudad de los Deportes - Ciudad de México",
+    "stock": 3800
+  },
+  {
+    "id": 8,
+    "nombre": "Peso Pluma",
+    "precio": 2800,
+    "categoria": "Estadio BBVA - Monterrey",
+    "stock": 5500
+  },
+  {
+    "id": 9,
+    "nombre": "Bad Bunny",
+    "precio": 4000,
+    "categoria": "Estadio GNP Seguros - Ciudad de México",
+    "stock": 6000
+  },
+  {
+    "id": 10,
+    "nombre": "The Weeknd",
+    "precio": 3800,
+    "categoria": "Estadio GNP Seguros - Ciudad de México",
+    "stock": 5800
+  },
+  {
+    "id": 11,
+    "nombre": "Karol G",
+    "precio": 3400,
+    "categoria": "Estadio BBVA - Monterrey",
     "stock": 5000
   },
   {
+    "id": 12,
+    "nombre": "Kenia OS",
+    "precio": 1600,
+    "categoria": "Auditorio Telmex - Guadalajara",
+    "stock": 2900
+  },
+  {
     "id": 13,
-    "nombre": "The Weeknd",
-    "precio": 1700,
-    "categoria": "Día 3 - Main Stage",
-    "stock": 4800
+    "nombre": "Danna",
+    "precio": 1500,
+    "categoria": "Auditorio Nacional - Ciudad de México",
+    "stock": 2800
   },
   {
     "id": 14,
-    "nombre": "Karol G",
-    "precio": 1700,
-    "categoria": "Día 3 - Main Stage",
-    "stock": 4700
+    "nombre": "Belinda",
+    "precio": 1400,
+    "categoria": "Teatro Diana - Guadalajara",
+    "stock": 1800
   },
   {
     "id": 15,
-    "nombre": "Feid",
-    "precio": 1700,
-    "categoria": "Día 3 - Urbano Stage",
-    "stock": 4000
+    "nombre": "Carín León",
+    "precio": 2200,
+    "categoria": "Estadio Mobil Super - Monterrey",
+    "stock": 4500
   },
   {
     "id": 16,
-    "nombre": "Abono general 3 días",
-    "precio": 4500,
-    "categoria": "Acceso general",
+    "nombre": "Junior H",
+    "precio": 2100,
+    "categoria": "Auditorio GNP Seguros - Puebla",
+    "stock": 4200
+  },
+  {
+    "id": 17,
+    "nombre": "Natanael Cano",
+    "precio": 2100,
+    "categoria": "Auditorio GNP Seguros - Puebla",
+    "stock": 3900
+  },
+  {
+    "id": 18,
+    "nombre": "Grupo Frontera",
+    "precio": 1900,
+    "categoria": "Auditorio Telmex - Guadalajara",
+    "stock": 3600
+  },
+  {
+    "id": 19,
+    "nombre": "Fuerza Regida",
+    "precio": 2300,
+    "categoria": "Estadio Mobil Super - Monterrey",
+    "stock": 4600
+  },
+  {
+    "id": 20,
+    "nombre": "Feid",
+    "precio": 2600,
+    "categoria": "Estadio Ciudad de los Deportes - Ciudad de México",
+    "stock": 4300
+  },
+  {
+    "id": 21,
+    "nombre": "Olivia Rodrigo",
+    "precio": 3000,
+    "categoria": "Auditorio Nacional - Ciudad de México",
+    "stock": 3200
+  },
+  {
+    "id": 22,
+    "nombre": "Sam Smith",
+    "precio": 2900,
+    "categoria": "Auditorio Nacional - Ciudad de México",
+    "stock": 3100
+  },
+  {
+    "id": 23,
+    "nombre": "Danny Ocean",
+    "precio": 1700,
+    "categoria": "Auditorio GNP Seguros - Puebla",
     "stock": 3000
+  },
+  {
+    "id": 24,
+    "nombre": "The Killers",
+    "precio": 3300,
+    "categoria": "Estadio BBVA - Monterrey",
+    "stock": 5100
+  },
+  {
+    "id": 25,
+    "nombre": "Imagine Dragons",
+    "precio": 3400,
+    "categoria": "Estadio GNP Seguros - Ciudad de México",
+    "stock": 5600
   }
 ]
