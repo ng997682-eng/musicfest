@@ -341,18 +341,30 @@ pre {
   overflow-x: auto;
 }
 
+pre {
+  background: #450427;
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+@media (max-width: 800px) {
+  #resumen-estadisticas {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 600px) {
   .barra-busqueda {
     flex-direction: column;
   }
 
-@media (max-width: 800px) {
-  #resumen-estadisticas {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 20px;
+  .titulo-seccion {
+    align-items: flex-start;
+  }
 }
+
 .dashboard-titulo {
   grid-column: 1 / -1;
 }
@@ -360,7 +372,7 @@ pre {
 .estadistica {
   min-height: 120px;
 }
-}
+
 
   .titulo-seccion {
     align-items: flex-start;
@@ -374,4 +386,3 @@ pre {
   box-shadow: 0 6px 16px rgba(217, 79, 138, 0.18);
   min-height: 120px;
  }
-}
