@@ -357,6 +357,11 @@ resumenEstadisticas.innerHTML = `
   </div>
 
   <div class="estadistica">
+    <strong>Total de recintos registrados:</strong>
+     ${Object.keys(conteoRecintos).length}
+  </div>
+
+  <div class="estadistica">
     <strong>Concierto con más boletos disponibles:</strong>${conciertoMasBoletos.nombre}
   </div>
   
@@ -371,8 +376,6 @@ resumenEstadisticas.innerHTML = `
   <div class="estadistica">
     <strong>Ciudad con más conciertos:</strong> ${ciudadMasConciertos}
   </div>
-
-
 `;
 });
 
