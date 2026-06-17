@@ -335,6 +335,8 @@ const recintoMasUsado = Object.keys(conteoRecintos).reduce((a, b) =>
 );
 
 resumenEstadisticas.innerHTML = `
+  <h3 class="dashboard-titulo">Resumen general</h3>
+
   <div class="estadistica">
     <strong>Total de conciertos:</strong> ${totalProductos}
   </div>

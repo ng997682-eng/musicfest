@@ -278,6 +278,11 @@ button:hover {
   background: #c0392b;
 }
 
+.dashboard-titulo {
+  grid-column: 1 / -1;
+  color: #b03060;
+  margin-bottom: 0;
+}
 
 pre {
   background: #450427;
