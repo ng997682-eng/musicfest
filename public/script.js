@@ -262,7 +262,8 @@ btnBuscar.addEventListener("click", async () => {
   }
 
   const texto = busqueda.value.toLowerCase().trim();
-  const filtrados = productos.filter(concierto => {
+
+const filtrados = productos.filter(concierto => {
   const nombre = concierto.nombre.toLowerCase().trim();
   const categoria = concierto.categoria.toLowerCase().trim();
 
