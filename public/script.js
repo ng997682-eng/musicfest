@@ -56,7 +56,7 @@ function mostrarProductos(lista, contenedor) {
   contenedor.innerHTML = "";
 
   if (lista.length === 0) {
-    contenedor.innerHTML = "<p>No hay productos para mostrar.</p>";
+    contenedor.innerHTML = "<p>No hay conciertos para mostrar.</p>";
     return;
   }
 
@@ -198,8 +198,6 @@ async function eliminarProducto(id) {
 }
 
 
-
-
 //submit del formulario
 formProducto.addEventListener("submit", async event => {
   event.preventDefault();
@@ -273,7 +271,7 @@ btnEstadisticas.addEventListener("click", async () => {
   }
 
   if (productos.length === 0) {
-    resumenEstadisticas.innerHTML = "<p>No hay productos registrados.</p>";
+    resumenEstadisticas.innerHTML = "<p>No hay conciertos registrados.</p>";
     return;
   }
 
