@@ -55,21 +55,24 @@ body {
 }
 
 .tab {
-  padding: 10px 16px;
+  padding: 10px 18px;
   border: none;
-  background: #fab4e5;
+  background: #f7c2da;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 12px;
   font-weight: bold;
+  transition: all 0.2s ease;
 }
 
 .tab:hover {
-  background: #d1d5db;
+  background: #f09fc2;
+  transform: translateY(-2px);
 }
 
 .tab.active {
-  background: #fe7fa7;
+  background: #d94f8a;
   color: white;
+  box-shadow: 0 3px 10px rgba(217, 79, 138, 0.25);
 }
 
 .contenedor {
