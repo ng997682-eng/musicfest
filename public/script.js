@@ -314,6 +314,23 @@ productos.forEach(concierto => {
     (conteoRecintos[concierto.categoria] || 0) + 1;
 });
 
+const conteoCiudades = {};
+
+productos.forEach(concierto => {
+  const partes = concierto.categoria.split(" - ");
+
+  if (partes.length > 1) {
+    const ciudad = partes[1];
+
+    conteoCiudades[ciudad] =
+      (conteoCiudades[ciudad] || 0) + 1;
+  }
+});
+
+const ciudadMasConciertos = Object.keys(conteoCiudades).reduce((a, b) =>
+  conteoCiudades[a] > conteoCiudades[b] ? a : b
+);
+
 const recintoMasUsado = Object.keys(conteoRecintos).reduce((a, b) =>
   conteoRecintos[a] > conteoRecintos[b] ? a : b
 );
@@ -350,6 +367,11 @@ resumenEstadisticas.innerHTML = `
   <div class="estadistica">
     <strong>Boleto más económico:</strong> $${precioMasBajo}
   </div>
+
+  <div class="estadistica">
+    <strong>Ciudad con más conciertos:</strong> ${ciudadMasConciertos}
+  </div>
+  
 `;
 });
 
