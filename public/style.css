@@ -23,18 +23,25 @@ body {
 
 
 .encabezado {
-  background: #e8afc4;
-  color: rgb(0, 0, 0);
-  padding: 28px 20px;
+  background: linear-gradient(135deg, #d94f8a, #f7a8c8);
+  color: white;
+  padding: 35px 20px;
   text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .encabezado h1 {
   margin: 0 0 8px 0;
+  font-size: 2.2rem;
 }
 
 .encabezado p {
   margin: 0;
+}
+
+.encabezado p {
+  margin: 0;
+  opacity: 0.95;
 }
 
 .tabs {
