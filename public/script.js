@@ -1,4 +1,8 @@
 // 1. Selección de elementos del DOM
+
+const btnMenu = document.getElementById("btn-menu");
+const menuTabs = document.querySelector(".tabs");
+
 const tabs = document.querySelectorAll(".tab");
 const contenidos = document.querySelectorAll(".tab-content");
 
@@ -40,6 +44,9 @@ tabs.forEach(tab => {
   });
 });
 
+btnMenu.addEventListener("click", () => {
+  menuTabs.classList.toggle("mostrar-menu");
+});
 
 // 3. Consultar conciertos del backend
 async function obtenerProductos() {

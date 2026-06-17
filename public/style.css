@@ -261,6 +261,30 @@ button:hover {
   font-weight: bold;
 }
 
+ /*Menú*/
+ 
+.btn-menu {
+  display: none;
+  margin: 12px auto;
+  background: #b03060;
+}
+
+@media (max-width: 700px) {
+  .btn-menu {
+    display: block;
+  }
+
+  .tabs {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabs.mostrar-menu {
+    display: flex;
+  }
+}
+
 /* DASHBOARD */
 .dashboard-encabezado {
   text-align: center;
