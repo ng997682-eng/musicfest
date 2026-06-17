@@ -58,7 +58,7 @@ async function obtenerProductos() {
   }
 }
 
-// 4. Mostrar productos en la interfaz
+// 4. Mostrar conciertos en la interfazla interfaz
 function mostrarProductos(lista, contenedor) {
   contenedor.innerHTML = "";
 
@@ -176,7 +176,7 @@ async function actualizarStock(id) {
     mensaje.className = "mensaje-error";
   }
 }
-//Función eliminar producto(id)
+// Función eliminar conciertoto(id)
 async function eliminarProducto(id) {
   const confirmar = confirm("¿Seguro que quieres eliminar este concierto?");
 
@@ -255,7 +255,7 @@ formProducto.addEventListener("submit", async event => {
   }
 });
 
-// 6. Buscar productos
+// 6. Buscar conciertos
 btnBuscar.addEventListener("click", async () => {
   if (productos.length === 0) {
     await obtenerProductos();
