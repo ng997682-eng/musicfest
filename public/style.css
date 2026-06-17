@@ -348,8 +348,18 @@ pre {
 
 @media (max-width: 800px) {
   #resumen-estadisticas {
-    grid-template-columns: 1fr;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+.dashboard-titulo {
+  grid-column: 1 / -1;
+}
+
+.estadistica {
+  min-height: 120px;
+}
 }
 
   .titulo-seccion {
