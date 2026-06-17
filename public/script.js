@@ -41,13 +41,13 @@ tabs.forEach(tab => {
 });
 
 
-// 3. Consultar productos del backend
+// 3. Consultar conciertos del backend
 async function obtenerProductos() {
   try {
     const respuesta = await fetch("/productos");
 
     if (!respuesta.ok) {
-      throw new Error("No se pudieron obtener los productos.");
+      throw new Error("No se pudieron obtener los conciertos.");
     }
 
     productos = await respuesta.json();
