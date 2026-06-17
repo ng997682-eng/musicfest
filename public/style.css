@@ -9,6 +9,19 @@ body {
   color: #430720;
 }
 
+.banner-festival {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 18px;
+  color: white;
+  background: linear-gradient(135deg, #c9184a, #ff4d6d, #ff8fab);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
 .encabezado {
   background: #e8afc4;
   color: rgb(0, 0, 0);
