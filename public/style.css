@@ -217,12 +217,22 @@ button:hover {
 }
 
 .mensaje-exito {
-  color: #794c5e;
+  background: #f0fff4;
+  color: #2f855a;
+  padding: 12px;
+  border-radius: 10px;
+  border-left: 5px solid #38a169;
+  margin-top: 12px;
 }
 
 .mensaje-error,
 .error {
-  color: #dc295f;
+  background: #fff5f5;
+  color: #c53030;
+  padding: 12px;
+  border-radius: 10px;
+  border-left: 5px solid #e53e3e;
+  margin-top: 12px;
   font-weight: bold;
 }
 
