@@ -239,6 +239,32 @@ button:hover {
   color: #b03060;
 }
 
+
+.btn-editar {
+  background: #d94f8a;
+}
+
+.btn-editar:hover {
+  background: #c13d78;
+}
+
+.btn-stock {
+  background: #f39c12;
+}
+
+.btn-stock:hover {
+  background: #d68910;
+}
+
+.btn-eliminar {
+  background: #e74c3c;
+}
+
+.btn-eliminar:hover {
+  background: #c0392b;
+}
+
+
 pre {
   background: #450427;
   color: white;

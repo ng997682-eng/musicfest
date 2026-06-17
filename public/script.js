@@ -81,18 +81,17 @@ function mostrarProductos(lista, contenedor) {
 
   <p><strong>Boletos disponibles:</strong> ${producto.stock}</p>
 
-  <button type="button" onclick="editarProducto(${producto.id})">
-    Editar concierto
-  </button>
+<button class="btn-editar" type="button" onclick="editarProducto(${producto.id})">
+  Editar concierto
+</button>
 
-  <button type="button" onclick="actualizarStock(${producto.id})">
-    Actualizar boletos
-  </button>
- 
-  <button type="button" onclick="eliminarProducto(${producto.id})">
-    Eliminar concierto
-  </button>
+<button class="btn-stock" type="button" onclick="actualizarStock(${producto.id})">
+  Actualizar boletos
+</button>
 
+<button class="btn-eliminar" type="button" onclick="eliminarProducto(${producto.id})">
+  Eliminar concierto
+</button>
 `;
 
     contenedor.appendChild(tarjeta);
