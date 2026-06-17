@@ -322,7 +322,7 @@ function cancelarEdicion() {
 formProducto.reset();
 productoId.value = "";
 btnGuardar.textContent = "Guardar concierto";
-mensaje.textContent = "Edición cancelada.";
+mensaje.textContent = "Edición de concierto cancelada.";
 mensaje.className = "mensaje-exito";
 }
 
