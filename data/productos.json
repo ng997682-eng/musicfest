@@ -230,5 +230,13 @@
     "categoria": "Estadio Azteca - Ciudad de México",
     "stock": 83264,
     "imagen": "https://i.pinimg.com/736x/18/d7/8b/18d78b48e97200585744aa7feb5698bf.jpg"
+  },
+  {
+    "id": 30,
+    "nombre": "Katseye",
+    "precio": 2300,
+    "categoria": "Auditorio Telmex - Guadalajara",
+    "stock": 11500,
+    "imagen": "https://i.pinimg.com/736x/62/a4/85/62a485e33d652eab6051d6b30f701c70.jpg"
   }
 ]

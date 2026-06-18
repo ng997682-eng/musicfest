@@ -137,7 +137,7 @@ body {
 
 .img-concierto {
   width: 100%;
-  height: 280px;
+  height: 320px;
   object-fit: cover;
   border-radius: 14px;
   margin-bottom: 14px;
@@ -155,8 +155,8 @@ body {
   text-align: center;
 }
 
-.producto-card {
-  padding: 20px;
+.producto-card p {
+  margin: 8px 0;
 }
 
 .producto-card button {
@@ -167,9 +167,9 @@ body {
 
 .formulario {
   display: grid;
-  gap: 12px;
-  max-width: 420px;
-  margin-top: 16px;
+  gap: 14px;
+  max-width: 620px;
+  margin: 20px auto;
 }
 
 label {
@@ -178,11 +178,17 @@ label {
 }
 
 input {
-  padding: 12px;
+  input {
+  padding: 16px;
+  font-size: 16px;
   border: 2px solid #f3bfd4;
   border-radius: 10px;
   width: 100%;
   transition: all 0.2s ease;
+  #agregar h2,
+  #agregar p {
+  text-align: center;
+}
 }
 
 input:focus {
