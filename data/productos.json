@@ -4,174 +4,199 @@
     "nombre": "Shakira",
     "precio": 3500,
     "categoria": "Estadio GNP Seguros - Ciudad de México",
-    "stock": 5000
+    "stock": 5000,
+    "imagen": "https://telemax.com.mx/wp-content/uploads/2025/03/shakira.png"
   },
   {
     "id": 2,
     "nombre": "Dua Lipa",
     "precio": 3200,
     "categoria": "Estadio GNP Seguros - Ciudad de México",
-    "stock": 4800
+    "stock": 4800,
+    "imagen": "https://i.pinimg.com/736x/71/e8/bd/71e8bdb376e1e34204afe8c92f58b4fc.jpg"
   },
   {
     "id": 3,
     "nombre": "Aitana",
     "precio": 1800,
     "categoria": "Auditorio Nacional - Ciudad de México",
-    "stock": 3000
+    "stock": 3000,
+    "imagen": "https://mallorcalivefestival.com/wp-content/uploads/2025/10/aitana-imagen-web.jpg"
   },
   {
     "id": 4,
     "nombre": "Maná",
     "precio": 2500,
     "categoria": "Estadio BBVA - Monterrey",
-    "stock": 5200
+    "stock": 5200,
+    "imagen": "https://i.pinimg.com/1200x/79/e7/4b/79e74b217f6f1cfeaf91996fa67f5355.jpg"
   },
   {
     "id": 5,
     "nombre": "Caifanes",
     "precio": 1900,
     "categoria": "Estadio Ciudad de los Deportes - Ciudad de México",
-    "stock": 4100
+    "stock": 4100,
+    "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/56QOV42AZBDGBIM5CPJCMPXNUQ.jpg"
   },
   {
     "id": 6,
     "nombre": "Zoé",
     "precio": 1700,
     "categoria": "Auditorio Nacional - Ciudad de México",
-    "stock": 3500
+    "stock": 3500,
+    "imagen": "https://i.pinimg.com/736x/4c/a1/17/4ca117a71575e200719fd7c4544e9a94.jpg"
   },
   {
     "id": 7,
     "nombre": "El Tri",
     "precio": 1200,
     "categoria": "Estadio Ciudad de los Deportes - Ciudad de México",
-    "stock": 3800
+    "stock": 3800,
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/42/Alex_Lora.jpg"
   },
   {
     "id": 8,
     "nombre": "Peso Pluma",
     "precio": 2800,
     "categoria": "Estadio BBVA - Monterrey",
-    "stock": 5500
+    "stock": 5500,
+    "imagen": "https://i.pinimg.com/736x/4b/d6/33/4bd6334bc6585fd582b8c57547d2e131.jpg"
   },
   {
     "id": 9,
     "nombre": "Bad Bunny",
     "precio": 4000,
     "categoria": "Estadio GNP Seguros - Ciudad de México",
-    "stock": 6000
+    "stock": 6000,
+    "imagen": "https://i.pinimg.com/736x/ae/15/d7/ae15d7b3e629435ae4796f5bde72c7ff.jpg"
   },
   {
     "id": 10,
     "nombre": "The Weeknd",
     "precio": 3800,
     "categoria": "Estadio GNP Seguros - Ciudad de México",
-    "stock": 5800
+    "stock": 5800,
+    "imagen": "https://i.pinimg.com/736x/be/21/14/be2114016a1a1f07aaa4278e08480645.jpg"
   },
   {
     "id": 11,
     "nombre": "Karol G",
     "precio": 3400,
     "categoria": "Estadio BBVA - Monterrey",
-    "stock": 5000
+    "stock": 5000,
+    "imagen": "https://i.pinimg.com/1200x/ac/e1/34/ace13412c29c0520db9cc43790a3e3ce.jpg"
   },
   {
     "id": 12,
     "nombre": "Kenia OS",
     "precio": 1600,
     "categoria": "Auditorio Telmex - Guadalajara",
-    "stock": 2900
+    "stock": 2900,
+    "imagen": "https://i.pinimg.com/736x/d6/62/c6/d662c613d505e038654f281c5892df69.jpg"
   },
   {
     "id": 13,
     "nombre": "Danna",
     "precio": 1500,
     "categoria": "Auditorio Nacional - Ciudad de México",
-    "stock": 2800
+    "stock": 2800,
+    "imagen": "https://i.pinimg.com/736x/32/6f/44/326f4408dc6afa5fa8825a7e434f31ce.jpg"
   },
   {
     "id": 14,
     "nombre": "Belinda",
     "precio": 1400,
     "categoria": "Teatro Diana - Guadalajara",
-    "stock": 1800
+    "stock": 1800,
+    "imagen": "https://i.pinimg.com/736x/5f/39/49/5f394930bd5192a564c7918cac9ca8de.jpg"
   },
   {
     "id": 15,
     "nombre": "Carín León",
     "precio": 2200,
     "categoria": "Estadio Mobil Super - Monterrey",
-    "stock": 4500
+    "stock": 4500,
+    "imagen": "https://i.pinimg.com/736x/ed/5a/d3/ed5ad37fdb50cc49c2bd6a3798e48d51.jpg"
   },
   {
     "id": 16,
     "nombre": "Junior H",
     "precio": 2100,
     "categoria": "Auditorio GNP Seguros - Puebla",
-    "stock": 4200
+    "stock": 4200,
+    "imagen": "https://i.pinimg.com/1200x/02/f1/e9/02f1e9f74159e0dfa73447e849060f7f.jpg"
   },
   {
     "id": 17,
     "nombre": "Natanael Cano",
     "precio": 2100,
     "categoria": "Auditorio GNP Seguros - Puebla",
-    "stock": 3900
+    "stock": 3900,
+    "imagen": "https://i.pinimg.com/736x/4b/cf/c7/4bcfc7086b07910e70ce73cbae7f2ea4.jpg"
   },
   {
     "id": 18,
     "nombre": "Grupo Frontera",
     "precio": 1900,
     "categoria": "Auditorio Telmex - Guadalajara",
-    "stock": 3600
+    "stock": 3600,
+    "imagen": "https://i.pinimg.com/1200x/e8/40/83/e840832679bcf978fac322c2e94e61dd.jpg"
   },
   {
     "id": 19,
     "nombre": "Fuerza Regida",
     "precio": 2300,
     "categoria": "Estadio Mobil Super - Monterrey",
-    "stock": 4600
+    "stock": 4600,
+    "imagen": "https://i.pinimg.com/736x/5c/20/ce/5c20ce6ab16444a33310c9ea579d0e93.jpg"
   },
   {
     "id": 20,
     "nombre": "Feid",
     "precio": 2600,
     "categoria": "Estadio Ciudad de los Deportes - Ciudad de México",
-    "stock": 4300
+    "stock": 4300,
+    "imagen": "https://i.pinimg.com/736x/9b/60/31/9b6031b2fe5e06cf451e144d3b398c67.jpg"
   },
   {
     "id": 21,
     "nombre": "Olivia Rodrigo",
     "precio": 3000,
     "categoria": "Auditorio Nacional - Ciudad de México",
-    "stock": 3200
+    "stock": 3200,
+    "imagen": "https://i.pinimg.com/736x/d7/29/99/d729997cce50f739c8f97821c19f4554.jpg"
   },
   {
     "id": 22,
     "nombre": "Sam Smith",
     "precio": 2900,
     "categoria": "Auditorio Nacional - Ciudad de México",
-    "stock": 3100
+    "stock": 3100,
+    "imagen": "https://i.pinimg.com/736x/6e/38/be/6e38bed4c4adea37883ccd0aca5dc623.jpg"
   },
   {
     "id": 23,
     "nombre": "Danny Ocean",
     "precio": 1700,
     "categoria": "Auditorio GNP Seguros - Puebla",
-    "stock": 3000
+    "stock": 3000,
+    "imagen": "https://i.pinimg.com/736x/95/5a/d3/955ad340a72646608c09487440a9577b.jpg"
   },
   {
     "id": 24,
     "nombre": "The Killers",
     "precio": 3300,
     "categoria": "Estadio BBVA - Monterrey",
-    "stock": 5100
+    "stock": 5100,
+    "imagen": "https://i.pinimg.com/1200x/cd/6e/c4/cd6ec48aca8beb568d411daf702decdb.jpg"
   },
   {
     "id": 25,
     "nombre": "Imagine Dragons",
     "precio": 3400,
     "categoria": "Estadio GNP Seguros - Ciudad de México",
-    "stock": 5600
+    "stock": 5600,
+    "imagen": "https://i.pinimg.com/736x/ef/25/94/ef25946382572e99f07afd4104734788.jpg"
   }
 ]

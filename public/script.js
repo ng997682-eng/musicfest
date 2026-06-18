@@ -79,6 +79,8 @@ function mostrarProductos(lista, contenedor) {
     tarjeta.classList.add("producto-card");
 
   tarjeta.innerHTML = `
+  <img src="${producto.imagen}" alt="${producto.nombre}" class="img-concierto">
+
 
   <h3>${producto.nombre}</h3>
 

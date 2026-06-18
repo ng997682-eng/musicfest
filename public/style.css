@@ -133,6 +133,13 @@ body {
   box-shadow: 0 4px 12px rgba(196, 80, 130, 0.15);
   transition: transform 0.2s ease;
 }
+.img-concierto {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
 
 .producto-card:hover {
   transform: translateY(-4px);
@@ -262,7 +269,7 @@ button:hover {
 }
 
  /*Menú*/
- 
+
 .btn-menu {
   display: none;
   margin: 12px auto;
