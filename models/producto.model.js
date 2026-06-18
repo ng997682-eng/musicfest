@@ -71,6 +71,7 @@ JSON.stringify(productos, null, 2)
 );
 }
 
+
 module.exports = {
   obtenerTodos,
   obtenerPorId,

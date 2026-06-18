@@ -17,7 +17,7 @@ function obtenerProductoPorId(req, res) {
 }
 
 function crearProducto(req, res) {
-  const { nombre, precio, categoria, stock } = req.body;
+  const { nombre, precio, categoria, stock, imagen } = req.body;
 
   if (!nombre || precio === undefined || !categoria || stock === undefined) {
     return res.status(400).json({
@@ -45,13 +45,15 @@ function crearProducto(req, res) {
 
 function actualizarProducto(req, res) {
 const id = Number(req.params.id);
-const { nombre, precio, categoria, stock } = req.body;
+const { nombre, precio, categoria, stock, imagen } = req.body;
 const productoActualizado = Producto.actualizar(id, {
-nombre,
-precio: Number(precio),
-categoria,
-stock: Number(stock)
+  nombre,
+  precio: Number(precio),
+  categoria,
+  stock: Number(stock),
+  imagen
 });
+
 if (!productoActualizado) {
 return res.status(404).json({ mensaje: "Producto no encontrado." });
 }
@@ -79,13 +81,15 @@ module.exports = {
 
 function actualizarProducto(req, res) {
 const id = Number(req.params.id);
-const { nombre, precio, categoria, stock } = req.body;
+const { nombre, precio, categoria, stock, imagen } = req.body;
 const productoActualizado = Producto.actualizar(id, {
 nombre,
 precio: Number(precio),
 categoria,
-stock: Number(stock)
+stock: Number(stock),
+imagen
 });
+
 if (!productoActualizado) {
 return res.status(404).json({ mensaje: "Producto no encontrado." });
 }
