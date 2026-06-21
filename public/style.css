@@ -58,12 +58,6 @@ body {
   box-shadow: 0 3px 10px rgba(217, 79, 138, 0.25);
 }
 
-.contenedor {
-  max-width: 95%;
-  margin: 30px auto;
-  padding: 0 20px;
-}
-
 .tab-content {
   display: none;
   background: white;
@@ -494,9 +488,7 @@ pre {
 .btn-info:hover {
   background-color: #8e254c;
 }
-.producto-card {
-  text-align: center;
-}
+
 .producto-card .btn-info {
   display: block;
   width: fit-content;
