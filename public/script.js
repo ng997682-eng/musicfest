@@ -81,7 +81,7 @@ function mostrarProductos(lista, contenedor) {
   tarjeta.innerHTML = `
   <h3>${producto.nombre}</h3>
   <img src="${producto.imagen || 'img/concierto.jpg'}" alt="${producto.nombre}" class="img-concierto">
-
+  <p><strong>Recinto y ciudad:</strong> ${producto.categoria}</p>
 
   <button type="button" onclick="verInformacion(${producto.id})">
     Ver información
