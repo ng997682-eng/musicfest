@@ -428,8 +428,12 @@ pre {
 .detalle-concierto {
   max-width: 900px;
   margin: 30px auto;
+  padding: 24px;
+  background: #fff0f7;
+  border-radius: 22px;
+  box-shadow: 0 8px 24px rgba(176, 48, 96, 0.18);
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.2fr 1fr;
   gap: 28px;
   align-items: center;
 }
@@ -438,40 +442,33 @@ pre {
   grid-column: 1 / -1;
   text-align: center;
   color: #b03060;
+  font-size: 2.2rem;
+  margin: 0;
 }
 
 .img-detalle {
   width: 100%;
-  height: 480px;
+  height: 420px;
   object-fit: cover;
   border-radius: 18px;
 }
 
-.detalle-concierto p,
+.detalle-concierto p {
+  grid-column: 2;
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
 .detalle-concierto .btn-editar,
 .detalle-concierto .btn-stock,
 .detalle-concierto .btn-eliminar {
   grid-column: 2;
+  width: 220px;
 }
 
 .btn-regresar {
   grid-column: 1 / -1;
-  width: 160px;
-  background: #b03060;
-}
-
-.img-detalle {
-  width: 100%;
-  max-width: 500px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 18px;
-  margin-bottom: 20px;
-}
-
-.btn-regresar {
-  display: block;
-  margin-bottom: 20px;
+  width: 150px;
   background: #b03060;
 }
 
