@@ -10,18 +10,18 @@ function obtenerProductoPorId(req, res) {
   const producto = Producto.obtenerPorId(id);
 
   if (!producto) {
-    return res.status(404).json({ mensaje: "Producto no encontrado." });
+    return res.status(404).json({ mensaje: "Concierto no encontrado." });
   }
 
   res.json(producto);
 }
 
 function crearProducto(req, res) {
-  const { nombre, precio, categoria, stock, imagen } = req.body;
+  const { nombre, precio, fecha, recinto, ciudad, stock, imagen } = req.body;
 
-  if (!nombre || precio === undefined || !categoria || stock === undefined) {
+  if (!nombre || precio === undefined || !fecha || !recinto || !ciudad || stock === undefined) {
     return res.status(400).json({
-      mensaje: "Todos los campos son obligatorios: nombre, precio, categoria y stock."
+      mensaje: "Todos los campos son obligatorios."
     });
   }
 
@@ -30,7 +30,7 @@ function crearProducto(req, res) {
   }
 
   if (Number(stock) < 0) {
-    return res.status(400).json({ mensaje: "El stock no puede ser negativo." });
+    return res.status(400).json({ mensaje: "Los boletos disponibles no pueden ser negativos." });
   }
 
   const nuevoProducto = Producto.crear({
@@ -44,26 +44,27 @@ function crearProducto(req, res) {
   });
 
   res.status(201).json(nuevoProducto);
-
 }
 
 function actualizarProducto(req, res) {
-const id = Number(req.params.id);
-const { nombre, precio, fecha, recinto, ciudad, stock, imagen } = req.body;
-const productoActualizado = Producto.actualizar(id, {
-  nombre,
-  precio: Number(precio),
-  fecha,
-  recinto,
-  ciudad,
-  stock: Number(stock),
-  imagen
-});
+  const id = Number(req.params.id);
+  const { nombre, precio, fecha, recinto, ciudad, stock, imagen } = req.body;
 
-if (!productoActualizado) {
-return res.status(404).json({ mensaje: "Producto no encontrado." });
-}
-res.json(productoActualizado);
+  const productoActualizado = Producto.actualizar(id, {
+    nombre,
+    precio: Number(precio),
+    fecha,
+    recinto,
+    ciudad,
+    stock: Number(stock),
+    imagen
+  });
+
+  if (!productoActualizado) {
+    return res.status(404).json({ mensaje: "Concierto no encontrado." });
+  }
+
+  res.json(productoActualizado);
 }
 
 function eliminarProducto(req, res) {
@@ -71,10 +72,10 @@ function eliminarProducto(req, res) {
   const eliminado = Producto.eliminar(id);
 
   if (!eliminado) {
-    return res.status(404).json({ mensaje: "Producto no encontrado." });
+    return res.status(404).json({ mensaje: "Concierto no encontrado." });
   }
 
-  res.json({ mensaje: "Producto eliminado correctamente." });
+  res.json({ mensaje: "Concierto eliminado correctamente." });
 }
 
 module.exports = {
@@ -84,22 +85,3 @@ module.exports = {
   actualizarProducto,
   eliminarProducto
 };
-
-function actualizarProducto(req, res) {
-const id = Number(req.params.id);
-const { nombre, precio, fecha, recinto, ciudad, stock, imagen } = req.body;
-const productoActualizado = Producto.actualizar(id, {
-nombre,
-precio: Number(precio),
-fecha,
-recinto,
-ciudad,
-stock: Number(stock),
-imagen
-});
-
-if (!productoActualizado) {
-return res.status(404).json({ mensaje: "Producto no encontrado." });
-}
-res.json(productoActualizado);
-}
