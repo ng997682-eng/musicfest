@@ -426,27 +426,27 @@ pre {
 }
 
 .detalle-concierto {
-  max-width: 650px;
-  margin: 30px auto;
-  padding: 24px;
+  max-width: 720px;
+  margin: 35px auto;
+  padding: 28px;
   background: #fff0f7;
-  border-radius: 24px;
-  box-shadow: 0 10px 28px rgba(176, 48, 96, 0.22);
+  border-radius: 26px;
+  box-shadow: 0 10px 30px rgba(176, 48, 96, 0.22);
   text-align: center;
 }
 
 .detalle-concierto h2 {
   color: #b03060;
-  font-size: 2.3rem;
-  margin: 10px 0 18px;
+  font-size: 2.4rem;
+  margin: 8px 0 20px;
 }
 
 .img-detalle {
   width: 100%;
-  height: 520px;
+  height: 540px;
   object-fit: cover;
-  border-radius: 20px;
-  margin-bottom: 20px;
+  border-radius: 22px;
+  margin-bottom: 22px;
 }
 
 .detalle-concierto p {
@@ -458,17 +458,17 @@ pre {
 .detalle-concierto .btn-stock,
 .detalle-concierto .btn-eliminar {
   display: block;
-  width: 260px;
+  width: 280px;
   margin: 12px auto;
   padding: 12px 18px;
-  border-radius: 22px;
+  border-radius: 25px;
   font-size: 1rem;
 }
 
 .btn-regresar {
   display: block;
   width: 160px;
-  margin: 0 0 18px 0;
+  margin: 0 0 20px 0;
   background: #b03060;
 }
 
