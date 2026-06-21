@@ -962,10 +962,12 @@ pre {
 #lista-productos.vista-detalle {
   display: flex !important;
   justify-content: center !important;
-  align-items: center;
-  width: 100%;
+  align-items: center !important;
+  width: 100% !important;
 }
 
 #lista-productos.vista-detalle .detalle-concierto {
+  width: 850px !important;
+  max-width: 90% !important;
   margin: 40px auto !important;
 }

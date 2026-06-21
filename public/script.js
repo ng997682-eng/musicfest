@@ -105,7 +105,7 @@ function verInformacion(id) {
     return;
   }
 
-  listaProductos.classList.add("vista-detalle");
+  listaProductos.className = "productos-grid vista-detalle";
   encabezadoConciertos.style.display = "none";
   listaProductos.innerHTML = `
     <article class="detalle-concierto">
