@@ -69,7 +69,12 @@ async function obtenerProductos() {
 
 // 4. Mostrar conciertos en la interfaz
 function mostrarProductos(lista, contenedor) {
-  contenedor.classList.remove("vista-detalle");
+  contenedor.className = "productos-grid";
+
+  if (encabezadoConciertos) {
+    encabezadoConciertos.style.display = "block";
+  }
+
   contenedor.innerHTML = "";
 
   if (lista.length === 0) {
@@ -113,8 +118,8 @@ function verInformacion(id) {
 
       <div class="detalle-contenido">
         <div class="detalle-botones">
-          <button type="button" class="btn-regresar" onclick="listaProductos.classList.remove('vista-detalle'); encabezadoConciertos.style.display='block'; mostrarProductos(productos, listaProductos)"
-            ← Regresar
+          <button type="button" class="btn-regresar" onclick="listaProductos.classList.remove('vista-detalle'); encabezadoConciertos.style.display='block'; mostrarProductos(productos, listaProductos)">
+           ← Regresar
           </button>
 
           <button class="btn-editar" type="button" onclick="editarProducto(${producto.id})">
