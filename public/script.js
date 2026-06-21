@@ -113,7 +113,8 @@ function verInformacion(id) {
       <img src="${producto.imagen || 'img/concierto.jpg'}" alt="${producto.nombre}" class="img-detalle">
 
       <p><strong>Precio del boleto:</strong> $${producto.precio}</p>
-      <p><strong>Recinto y ciudad:</strong> ${producto.recinto}, ${producto.ciudad}</p>
+      <p><strong>Recinto:</strong> ${producto.recinto}</p>
+      <p><strong>Ciudad:</strong> ${producto.ciudad}</p>
       <p><strong>Boletos disponibles:</strong> ${producto.stock}</p>
 
       <button class="btn-editar" type="button" onclick="editarProducto(${producto.id})">
