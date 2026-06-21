@@ -46,11 +46,13 @@ function crearProducto(req, res) {
 
 function actualizarProducto(req, res) {
 const id = Number(req.params.id);
-const { nombre, precio, categoria, stock, imagen } = req.body;
+const { nombre, precio, fecha, recinto, ciudad, stock, imagen } = req.body;
 const productoActualizado = Producto.actualizar(id, {
   nombre,
   precio: Number(precio),
-  categoria,
+  fecha,
+  recinto,
+  ciudad,
   stock: Number(stock),
   imagen
 });
@@ -82,11 +84,13 @@ module.exports = {
 
 function actualizarProducto(req, res) {
 const id = Number(req.params.id);
-const { nombre, precio, categoria, stock, imagen } = req.body;
+const { nombre, precio, fecha, recinto, ciudad, stock, imagen } = req.body;
 const productoActualizado = Producto.actualizar(id, {
 nombre,
 precio: Number(precio),
-categoria,
+fecha,
+recinto,
+ciudad,
 stock: Number(stock),
 imagen
 });

@@ -153,6 +153,7 @@ return;
 productoId.value = producto.id;
 document.getElementById("nombre").value = producto.nombre;
 document.getElementById("precio").value = producto.precio;
+document.getElementById("fecha").value = producto.fecha || "";
 document.getElementById("recinto").value = producto.recinto || "";
 document.getElementById("ciudad").value = producto.ciudad || "";
 document.getElementById("stock").value = producto.stock;
@@ -188,11 +189,14 @@ async function actualizarStock(id) {
   }
 
   const productoActualizado = {
-    nombre: producto.nombre,
-    precio: producto.precio,
-    categoria: producto.categoria,
-    stock: stockNumero
-  };
+  nombre: producto.nombre,
+  precio: producto.precio,
+  fecha: producto.fecha,
+  recinto: producto.recinto,
+  ciudad: producto.ciudad,
+  stock: stockNumero,
+  imagen: producto.imagen
+};
 
   try {
     const respuesta = await fetch(`/productos/${id}`, {
@@ -257,6 +261,7 @@ formProducto.addEventListener("submit", async event => {
  const producto = {
   nombre: document.getElementById("nombre").value,
   precio: Number(document.getElementById("precio").value),
+  fecha: document.getElementById("fecha").value,
   recinto: document.getElementById("recinto").value,
   ciudad: document.getElementById("ciudad").value,
   stock: Number(document.getElementById("stock").value),
