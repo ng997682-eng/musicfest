@@ -487,3 +487,6 @@ pre {
 .btn-info:hover {
   background-color: #8e254c;
 }
+.producto-card {
+  text-align: center;
+}
