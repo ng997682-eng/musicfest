@@ -156,8 +156,8 @@ document.getElementById("precio").value = producto.precio;
 document.getElementById("fecha").value = producto.fecha || "";
 document.getElementById("recinto").value = producto.recinto || "";
 document.getElementById("ciudad").value = producto.ciudad || "";
-document.getElementById("stock").value = producto.stock;
 document.getElementById("imagen").value = producto.imagen || "";
+document.getElementById("stock").value = producto.stock;
 btnGuardar.textContent = "Actualizar concierto";
 mensaje.textContent = "Editando concierto. Modifica los datos y guarda los cambios.";
 mensaje.className = "mensaje-exito";
@@ -191,11 +191,11 @@ async function actualizarStock(id) {
   const productoActualizado = {
   nombre: producto.nombre,
   precio: producto.precio,
-  fecha: producto.fecha,
-  recinto: producto.recinto,
-  ciudad: producto.ciudad,
+  fecha: producto.fecha || "",
+  recinto: producto.recinto || "",
+  ciudad: producto.ciudad || "",
   stock: stockNumero,
-  imagen: producto.imagen
+  imagen: producto.imagen || ""
 };
 
   try {

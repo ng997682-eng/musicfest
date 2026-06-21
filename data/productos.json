@@ -2,23 +2,30 @@
   {
     "id": 1,
     "nombre": "Shakira",
-    "precio": 3500,
-    "categoria": "Estadio GNP Seguros - Ciudad de México",
-    "stock": 5000,
+    "precio": 7500,
+    "fecha": "2026-06-17",
+    "recinto": "Estadio GNP Seguros",
+    "ciudad": "Ciudad de Monterrey ",
+    "stock": 65000,
     "imagen": "https://telemax.com.mx/wp-content/uploads/2025/03/shakira.png"
   },
   {
     "id": 2,
     "nombre": "Dua Lipa",
-    "precio": 3200,
-    "categoria": "Estadio GNP Seguros - Ciudad de México",
-    "stock": 4800,
+    "precio": 70000,
+    "fecha": "2026-12-31",
+    "recinto": "Estadio BBVA",
+    "ciudad": "Monterrey",
+    "stock": 4500,
     "imagen": "https://i.pinimg.com/736x/71/e8/bd/71e8bdb376e1e34204afe8c92f58b4fc.jpg"
   },
   {
     "id": 3,
     "nombre": "Aitana",
-    "precio": 2500,
+    "precio": 3500,
+    "fecha": "2026-06-18",
+    "recinto": "Auditorio Nacional",
+    "ciudad": "Ciudad de Mexico",
     "stock": 10000,
     "imagen": "https://mallorcalivefestival.com/wp-content/uploads/2025/10/aitana-imagen-web.jpg"
   },
