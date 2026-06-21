@@ -958,3 +958,14 @@ pre {
   left: 30px;
   top: 30px;
 }
+
+#lista-productos.vista-detalle {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  width: 100%;
+}
+
+#lista-productos.vista-detalle .detalle-concierto {
+  margin: 40px auto !important;
+}

@@ -69,6 +69,7 @@ async function obtenerProductos() {
 
 // 4. Mostrar conciertos en la interfaz
 function mostrarProductos(lista, contenedor) {
+  contenedor.classList.remove("vista-detalle");
   contenedor.innerHTML = "";
 
   if (lista.length === 0) {
