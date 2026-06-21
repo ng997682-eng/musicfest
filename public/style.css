@@ -12,14 +12,14 @@ body {
 .encabezado {
   background: linear-gradient(135deg, #d94f8a, #f7a8c8);
   color: white;
-  padding: 35px 20px;
+  padding: 45px 30px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .encabezado h1 {
   margin: 0 0 8px 0;
-  font-size: 2.2rem;
+  font-size: 5cqh;
 }
 
 .encabezado p {
