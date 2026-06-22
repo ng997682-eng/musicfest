@@ -23,27 +23,28 @@
 
   <main class="contenedor">
 
-   <section id="inicio" class="tab-content active inicio-ticket">
+<section id="inicio" class="tab-content active inicio-ticket">
   <div class="inicio-contenido">
     <p class="inicio-label">Sistema de gestión de conciertos</p>
 
-    <h2>Encuentra, registra y administra eventos en un solo lugar</h2>
+    <h2>Vive la música</h2>
 
     <p class="inicio-descripcion">
-      TicketLive permite gestionar conciertos, artistas, recintos, ciudades, fechas,
-      precios por sección y boletos disponibles de manera rápida, ordenada y sencilla.
+      Agrega, organiza y administra conciertos de manera rápida y sencilla.
+      Registra artistas, fechas, ciudades, recintos, precios por sección y boletos disponibles.
     </p>
 
-    <div class="inicio-busqueda-falsa">
-      <span>Buscar artista, ciudad o recinto...</span>
-      <button>Buscar</button>
-    </div>
+    <button class="btn-inicio" data-tab="agregar">
+      ➕ Agregar concierto
+    </button>
 
     <div class="inicio-tags">
-      <span>Conciertos</span>
-      <span>Boletos</span>
+      <span>Artistas</span>
+      <span>Fechas</span>
       <span>Recintos</span>
-      <span>Estadísticas</span>
+      <span>Precios</span>
+      <span>Boletos</span>
+      <span>Estadisticas</span>
     </div>
   </div>
 </section>
@@ -147,6 +148,10 @@ routes/productos.routes.js
     </section>
 
   </main>
+
+  <footer>
+    <p>Festival Música © 2026 | Proyecto de Desarrollo de Aplicaciones Web</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
