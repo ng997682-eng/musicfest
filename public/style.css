@@ -93,12 +93,29 @@ body {
   background: linear-gradient(135deg, #ffe1ee, #ffc1dc, #f68fbd);
 }
 
-
 .inicio-hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 45px;
+  min-height: 720px;
+  display: flex;
   align-items: center;
+  padding-left: 100px;
+}
+
+.inicio-label {
+  font-size: 1.4rem;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: #b03060;
+}
+
+.inicio-texto h2 {
+  font-size: 7rem;
+  margin: 18px 0;
+  color: #430720;
+}
+
+.inicio-texto p {
+  font-size: 1.5rem;
+  max-width: 900px;
 }
 
 .inicio-texto {

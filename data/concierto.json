@@ -432,5 +432,19 @@
     "ciudad": "Ciudad de México",
     "stock": 65000,
     "imagen": "https://i.pinimg.com/736x/50/0a/1a/500a1a62d06f5f34109d646174f1bb61.jpg"
+  },
+  {
+    "id": 32,
+    "nombre": "Carla Morrison",
+    "precios": {
+      "general": 1000,
+      "preferente": 1800,
+      "vip": 3500
+    },
+    "fecha": "2026-08-11",
+    "recinto": "Auditorio Metropolitano",
+    "ciudad": "Puebla",
+    "stock": 5500,
+    "imagen": "https://i.pinimg.com/1200x/8c/1c/36/8c1c36be249777a953af3d743e6ec6b5.jpg"
   }
 ]
