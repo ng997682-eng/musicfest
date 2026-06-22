@@ -15,7 +15,6 @@ body {
   color: white;
   padding: 35px 20px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .encabezado h1 {
@@ -25,17 +24,15 @@ body {
 
 .encabezado p {
   margin: 0;
-  opacity: 0.95;
 }
 
-/* PESTAÑAS */
+/* MENÚ */
 .tabs {
   display: flex;
   justify-content: center;
   gap: 8px;
   background: white;
   padding: 12px;
-  border-bottom: 1px solid #ddd;
   flex-wrap: wrap;
 }
 
@@ -47,17 +44,10 @@ body {
   cursor: pointer;
   border-radius: 12px;
   font-weight: bold;
-  transition: all 0.2s ease;
-}
-
-.tab:hover {
-  background: #f09fc2;
-  transform: translateY(-2px);
 }
 
 .tab.active {
   background: #d94f8a;
-  color: white;
 }
 
 /* CONTENEDOR */
@@ -72,78 +62,115 @@ body {
   background: linear-gradient(135deg, #fff0f7, #ffe1ec);
   padding: 40px;
   border-radius: 18px;
-  box-shadow: none;
 }
 
 .tab-content.active {
   display: block;
 }
 
-.titulo-seccion {
+/* INICIO */
+.inicio-ticket {
+  min-height: 620px;
+}
+
+.inicio-contenido {
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.inicio-label {
+  color: #b03060;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.inicio-ticket h2 {
+  font-size: 3.6rem;
+  color: #430720;
+  margin: 15px 0;
+}
+
+.inicio-descripcion {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #5a1b34;
+}
+
+.inicio-tags {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
   flex-wrap: wrap;
 }
 
-/* INICIO */
-.banner-festival {
-  text-align: center;
-  font-size: 28px;
+.inicio-tags span {
+  background: white;
+  border: 1px solid #f3bfd4;
+  padding: 10px 18px;
+  border-radius: 999px;
   font-weight: bold;
-  padding: 30px;
-  margin: 20px 0;
-  border-radius: 18px;
-  color: white;
-  background: linear-gradient(135deg, #c9184a, #ff4d6d, #ff8fab);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  color: #b03060;
 }
 
-.panel-info {
-  background: #fff3f8;
-  border-left: 6px solid #d94f8a;
-  padding: 18px;
-  border-radius: 14px;
-  margin-top: 20px;
+/* BUSCADOR EN CONCIERTOS */
+.encabezado-conciertos {
+  text-align: center;
+  margin-bottom: 28px;
 }
 
-/* TARJETAS DE CONCIERTOS */
+.encabezado-conciertos h2 {
+  color: #b03060;
+  font-size: 2.6rem;
+  margin-bottom: 8px;
+}
+
+.buscador-conciertos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.buscador-conciertos input {
+  max-width: 520px;
+  border-radius: 999px;
+}
+
+.buscador-conciertos button {
+  border-radius: 999px;
+  padding: 12px 24px;
+  background: #b03060;
+}
+
+/* TARJETAS */
 .productos-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
-  margin-top: 0;
+  gap: 14px;
   width: 100%;
 }
 
 .producto-card {
-  border: none;
-  border-radius: 20px;
-  padding: 0;
   background: white;
-  box-shadow: 0 8px 22px rgba(176, 48, 96, 0.18);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 20px;
   overflow: hidden;
   text-align: center;
-}
-
-.producto-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(176, 48, 96, 0.28);
+  box-shadow: 0 8px 22px rgba(176, 48, 96, 0.18);
 }
 
 .producto-card h3 {
   margin: 0;
   padding: 18px 10px 12px;
   color: #b03060;
-  font-size: 2rem;
-  text-align: center;
+  font-size: 1.8rem;
 }
 
 .img-concierto {
   width: 100%;
-  height: 360px;
+  height: 330px;
   object-fit: cover;
   display: block;
 }
@@ -154,11 +181,6 @@ body {
   margin: 18px auto 22px;
   background-color: #b03060;
   padding: 10px 16px;
-  font-size: 15px;
-}
-
-.producto-card .btn-info:hover {
-  background-color: #8e254c;
 }
 
 /* FORMULARIO */
@@ -187,12 +209,6 @@ input {
   width: 100%;
 }
 
-input:focus {
-  outline: none;
-  border-color: #d94f8a;
-  box-shadow: 0 0 8px rgba(217, 79, 138, 0.2);
-}
-
 /* BOTONES */
 button {
   padding: 8px 12px;
@@ -202,20 +218,10 @@ button {
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
-  transition: all 0.2s ease;
-}
-
-button:hover {
-  background: #e06c99;
-  transform: scale(1.03);
 }
 
 .formulario button {
   background: #7c2a44;
-}
-
-.formulario button:hover {
-  background: #a7657c;
 }
 
 #btn-cancelar-edicion {
@@ -227,24 +233,12 @@ button:hover {
   background-color: #d94f8a;
 }
 
-.btn-editar:hover {
-  background-color: #c13d78;
-}
-
 .btn-stock {
   background-color: #f39c12;
 }
 
-.btn-stock:hover {
-  background-color: #d68910;
-}
-
 .btn-eliminar {
   background-color: #e74c3c;
-}
-
-.btn-eliminar:hover {
-  background-color: #c0392b;
 }
 
 /* MENSAJES */
@@ -259,7 +253,6 @@ button:hover {
   padding: 12px;
   border-radius: 10px;
   border-left: 5px solid #38a169;
-  margin-top: 12px;
 }
 
 .mensaje-error,
@@ -271,29 +264,11 @@ button:hover {
   border-left: 5px solid #e53e3e;
 }
 
-/* BUSCAR */
-.barra-busqueda {
-  display: flex;
-  gap: 8px;
-  max-width: 520px;
-  margin-top: 16px;
-}
-
 /* DASHBOARD */
-.dashboard-encabezado {
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.dashboard-encabezado h2 {
-  color: #b03060;
-}
-
 #resumen-estadisticas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  margin-top: 20px;
 }
 
 .dashboard-titulo {
@@ -302,16 +277,11 @@ button:hover {
 }
 
 .estadistica {
-  background: linear-gradient(135deg, #fff0f7, #ffe1ec);
+  background: white;
   border: 1px solid #f3a6c9;
   border-radius: 18px;
   padding: 22px;
   box-shadow: 0 6px 16px rgba(217, 79, 138, 0.18);
-  min-height: 120px;
-}
-
-.estadistica strong {
-  color: #b03060;
 }
 
 .dashboard-principal {
@@ -319,23 +289,7 @@ button:hover {
   color: white;
 }
 
-.dashboard-principal strong,
-.dashboard-principal .numero-dashboard {
-  color: white;
-}
-
-.numero-dashboard {
-  font-size: 2.3rem;
-  font-weight: bold;
-  color: #d94f8a;
-  margin-top: 12px;
-}
-
-.estadistica:last-child {
-  grid-column: 1 / -1;
-}
-
-/* VISTA DETALLE CENTRADA */
+/* DETALLE */
 #productos.vista-activa {
   display: flex !important;
   flex-direction: column;
@@ -345,37 +299,33 @@ button:hover {
 #lista-productos.vista-detalle {
   display: flex !important;
   justify-content: center !important;
-  align-items: center !important;
   width: 100% !important;
-  max-width: 100% !important;
-  min-height: 650px;
-  margin: 0 auto !important;
 }
 
 .detalle-concierto {
-  width: 1100px;
+  width: 900px;
   max-width: 95%;
   margin: 40px auto !important;
-  padding: 28px;
+  padding: 32px;
   background: #fff0f7;
-  border-radius: 26px;
+  border-radius: 28px;
   box-shadow: 0 10px 30px rgba(176, 48, 96, 0.22);
   text-align: center;
 }
 
 .detalle-concierto h2 {
   color: #b03060;
-  font-size: 3rem;
-  margin: 0 0 20px;
+  font-size: 2.8rem;
+  margin: 0 0 22px;
 }
 
 .img-detalle {
   width: 100%;
-  max-width: 900px;
-  height: 500px;
+  max-width: 720px;
+  height: 420px;
   object-fit: cover;
-  border-radius: 20px;
-  margin-bottom: 22px;
+  border-radius: 22px;
+  margin-bottom: 24px;
 }
 
 .detalle-tarjetas {
@@ -389,19 +339,12 @@ button:hover {
   background: white;
   border: 1px solid #f3bfd4;
   border-radius: 18px;
-  padding: 25px;
-  box-shadow: 0 5px 14px rgba(176, 48, 96, 0.12);
+  padding: 20px;
 }
 
 .detalle-card h3 {
   color: #b03060;
   margin-top: 0;
-  margin-bottom: 12px;
-}
-
-.detalle-card p {
-  font-size: 17px;
-  margin: 8px 0;
 }
 
 .detalle-botones {
@@ -425,19 +368,6 @@ button:hover {
   background: #b03060;
 }
 
-.btn-regresar:hover {
-  background: #8e254c;
-}
-
-/* PRE */
-pre {
-  background: #450427;
-  color: white;
-  padding: 16px;
-  border-radius: 12px;
-  overflow-x: auto;
-}
-
 /* RESPONSIVE */
 @media (max-width: 1200px) {
   .productos-grid {
@@ -456,112 +386,15 @@ pre {
 }
 
 @media (max-width: 700px) {
-  .tabs {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .productos-grid {
     grid-template-columns: 1fr;
   }
 
-  .barra-busqueda {
+  .buscador-conciertos {
     flex-direction: column;
-  }
-
-  .img-concierto {
-    height: 320px;
-  }
-.inicio-ticket {
-  min-height: 560px;
-  padding: 70px 80px;
-  background: linear-gradient(135deg, #fff4f8, #ffe5ef);
-}
-
-.inicio-contenido {
-  max-width: 1050px;
-}
-
-.inicio-label {
-  color: #b03060;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-bottom: 16px;
-}
-
-.inicio-ticket h2 {
-  color: #2b0616;
-  font-size: 4rem;
-  line-height: 1.1;
-  max-width: 950px;
-  margin: 0 0 24px;
-}
-
-.inicio-descripcion {
-  font-size: 1.25rem;
-  line-height: 1.7;
-  max-width: 850px;
-  color: #5a1b34;
-}
-
-.inicio-busqueda-falsa {
-  margin-top: 34px;
-  max-width: 680px;
-  background: white;
-  border: 1px solid #f3bfd4;
-  border-radius: 999px;
-  padding: 8px 8px 8px 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 10px 24px rgba(176, 48, 96, 0.14);
-}
-
-.inicio-busqueda-falsa span {
-  color: #9b6b7d;
-  font-size: 1rem;
-}
-
-.inicio-busqueda-falsa button {
-  border-radius: 999px;
-  padding: 12px 26px;
-  background: #b03060;
-}
-
-.inicio-tags {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 26px;
-}
-
-.inicio-tags span {
-  background: white;
-  border: 1px solid #f3bfd4;
-  padding: 10px 18px;
-  border-radius: 999px;
-  font-weight: bold;
-  color: #b03060;
-}
-
-@media (max-width: 700px) {
-  .inicio-ticket {
-    padding: 45px 24px;
   }
 
   .inicio-ticket h2 {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
-
-  .inicio-busqueda-falsa {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
-    border-radius: 24px;
-    padding: 18px;
-  }
-}
-
-
 }
