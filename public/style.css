@@ -69,7 +69,7 @@ body {
 
 .tab-content {
   display: none;
-  background: white;
+  background: linear-gradient(135deg, #fff0f7, #ffe1ec);
   padding: 28px;
   border-radius: 18px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
