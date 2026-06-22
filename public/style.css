@@ -472,4 +472,74 @@ pre {
   .img-concierto {
     height: 320px;
   }
+
+  .inicio-hero {
+  min-height: 330px;
+  border-radius: 28px;
+  padding: 50px;
+  color: white;
+  background: linear-gradient(135deg, #b03060, #ff5c9d, #ff9cc9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(176, 48, 96, 0.25);
+}
+
+.inicio-etiqueta {
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.inicio-hero h2 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.inicio-hero p {
+  font-size: 1.1rem;
+  max-width: 760px;
+}
+
+.inicio-botones {
+  margin-top: 25px;
+}
+
+.inicio-botones button {
+  margin: 8px;
+  padding: 12px 22px;
+  border-radius: 25px;
+}
+
+.inicio-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.inicio-cards div {
+  background: white;
+  padding: 24px;
+  border-radius: 22px;
+  box-shadow: 0 8px 20px rgba(176, 48, 96, 0.16);
+  text-align: center;
+}
+
+.inicio-cards h3 {
+  color: #b03060;
+}
+
+@media (max-width: 700px) {
+  .inicio-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .inicio-hero h2 {
+    font-size: 2rem;
+  }
+}
+
 }

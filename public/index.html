@@ -25,32 +25,38 @@
   <main class="contenedor">
 
     <section id="inicio" class="tab-content active">
-      <h2>Bienvenido al sistema de conciertos</h2>
+  <div class="inicio-hero">
+    <p class="inicio-etiqueta">TicketLive</p>
+    <h2>Gestiona conciertos de forma fácil y rápida</h2>
+    <p>
+      Administra artistas, fechas, recintos, ciudades, precios y boletos disponibles
+      desde un solo sistema.
+    </p>
 
-      <p>
-        Esta aplicación permite administrar conciertos en diferentes ciudades y recintos.
-        El sistema facilita el registro, consulta, actualización y eliminación de conciertos,
-        así como la gestión de boletos disponibles.
-      </p>
+    <div class="inicio-botones">
+      <button onclick="cambiarPestana('productos')">Ver conciertos</button>
+      <button onclick="cambiarPestana('agregar')">Agregar concierto</button>
+    </div>
+  </div>
 
-      <div class="banner-festival">
-        🎟️ TicketLive 🎵
-        <br>
-        Shakira • Dua Lipa • Maná • Caifanes • The Weeknd • Peso Pluma
-      </div>
+  <div class="inicio-cards">
+    <div>
+      <h3>🎤 Conciertos</h3>
+      <p>Consulta artistas registrados y su información.</p>
+    </div>
 
-      <div class="panel-info">
-        <h3>Funciones del sistema</h3>
-        <ul>
-          <li>Registrar conciertos.</li>
-          <li>Consultar conciertos disponibles.</li>
-          <li>Actualizar información de conciertos.</li>
-          <li>Eliminar registros.</li>
-          <li>Buscar por artista, recinto o ciudad.</li>
-          <li>Visualizar estadísticas de boletos y precios.</li>
-        </ul>
-      </div>
-    </section>
+    <div>
+      <h3>🎟️ Boletos</h3>
+      <p>Actualiza la disponibilidad de entradas.</p>
+    </div>
+
+    <div>
+      <h3>📊 Estadísticas</h3>
+      <p>Visualiza datos generales del sistema.</p>
+    </div>
+  </div>
+</section>
+
 
     <section id="productos" class="tab-content">
       <div class="titulo-seccion">
