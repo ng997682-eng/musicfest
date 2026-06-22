@@ -329,18 +329,20 @@ formProducto.addEventListener("submit", async event => {
 
     mensaje.className = "mensaje-exito";
 
-    formProducto.reset();
-    productoId.value = "";
-    btnGuardar.textContent = "Guardar concierto";
+   formProducto.reset();
+   productoId.value = "";
+   btnGuardar.textContent = "Guardar concierto";
 
-    productos = await (await fetch("/productos")).json();
+   const productosActualizados = await fetch("/productos");
+   productos = await productosActualizados.json();
 
-    if (id) {
-      verInformacion(Number(id));
-    } else {
-      cambiarPestana("productos");
-      mostrarProductos(productos, listaProductos);
-    }
+   cambiarPestana("productos");
+
+if (id) {
+  verInformacion(Number(id));
+} else {
+  mostrarProductos(productos, listaProductos);
+}
 
   } catch (error) {
     mensaje.textContent = error.message;
