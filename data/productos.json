@@ -44,11 +44,7 @@
   {
     "id": 4,
     "nombre": "Maná",
-    "precios": {
-      "general": 850,
-      "preferente": 1800,
-      "vip": 3500
-    },
+    "precio": null,
     "fecha": "2026-07-21",
     "recinto": "Estadio de Béisbol \"Hermanos Serdán\"",
     "ciudad": "Puebla",

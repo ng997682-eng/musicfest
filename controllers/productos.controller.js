@@ -17,16 +17,16 @@ function obtenerProductoPorId(req, res) {
 }
 
 function crearProducto(req, res) {
-  const { nombre, precio, fecha, recinto, ciudad, stock, imagen } = req.body;
+  const { nombre, precios, fecha, recinto, ciudad, stock, imagen } = req.body;
 
-  if (!nombre || precio === undefined || !fecha || !recinto || !ciudad || stock === undefined) {
+  if (!nombre || !precios || !fecha || !recinto || !ciudad || stock === undefined) {
     return res.status(400).json({
       mensaje: "Todos los campos son obligatorios."
     });
   }
 
-  if (Number(precio) <= 0) {
-    return res.status(400).json({ mensaje: "El precio debe ser mayor que cero." });
+  if (Number(precios.general) <= 0) {
+    return res.status(400).json({ mensaje: "El precio general debe ser mayor que cero." });
   }
 
   if (Number(stock) < 0) {
@@ -35,7 +35,7 @@ function crearProducto(req, res) {
 
   const nuevoProducto = Producto.crear({
     nombre,
-    precio: Number(precio),
+    precios,
     fecha,
     recinto,
     ciudad,
@@ -48,11 +48,11 @@ function crearProducto(req, res) {
 
 function actualizarProducto(req, res) {
   const id = Number(req.params.id);
-  const { nombre, precio, fecha, recinto, ciudad, stock, imagen } = req.body;
+  const { nombre, precios, fecha, recinto, ciudad, stock, imagen } = req.body;
 
   const productoActualizado = Producto.actualizar(id, {
     nombre,
-    precio: Number(precio),
+    precios,
     fecha,
     recinto,
     ciudad,

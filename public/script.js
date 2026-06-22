@@ -167,7 +167,9 @@ return;
 }
 productoId.value = producto.id;
 document.getElementById("nombre").value = producto.nombre;
-document.getElementById("precio").value = producto.precios?.general || producto.precio;
+document.getElementById("precio-general").value = producto.precios?.general || producto.precio || "";
+document.getElementById("precio-preferente").value = producto.precios?.preferente || "";
+document.getElementById("precio-vip").value = producto.precios?.vip || "";
 document.getElementById("fecha").value = producto.fecha || "";
 document.getElementById("recinto").value = producto.recinto || "";
 document.getElementById("ciudad").value = producto.ciudad || "";
@@ -282,9 +284,9 @@ formProducto.addEventListener("submit", async event => {
 const producto = {
   nombre: document.getElementById("nombre").value,
   precios: {
-  general: Number(document.getElementById("precio").value),
-  preferente: Number(document.getElementById("precio").value),
-  vip: Number(document.getElementById("precio").value)
+  general: Number(document.getElementById("precio-general").value),
+  preferente: Number(document.getElementById("precio-preferente").value),
+  vip: Number(document.getElementById("precio-vip").value)
 },
   fecha: document.getElementById("fecha").value,
   recinto: document.getElementById("recinto").value,
