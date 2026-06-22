@@ -6,12 +6,13 @@
   <title>Sistema de conciertos</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <header class="encabezado">
-     <h1>TicketLive</h1>
-      <p>¡Bienvenido al sistema de gestión de conciertos!</p>
-    </header>
+    <h1>TicketLive</h1>
+    <p>¡Bienvenido al sistema de gestión de conciertos!</p>
+  </header>
 
   <nav class="tabs">
     <button class="tab active" data-tab="inicio">🏠 Inicio</button>
@@ -23,43 +24,46 @@
 
   <main class="contenedor">
 
-<section id="inicio" class="tab-content active inicio-ticket">
-  <div class="inicio-hero">
-    <div class="inicio-texto">
-      <p class="inicio-label">Sistema de gestión de conciertos</p>
+    <section id="inicio" class="tab-content active inicio-ticket">
+      <div class="inicio-hero">
+        <div class="inicio-texto">
+          <p class="inicio-label">Sistema de gestión de conciertos</p>
+          <h2>TicketLive</h2>
+        </div>
 
-      <h2>TicketLive</h2>
-    </div>
+        <div class="inicio-imagen">
+          <img 
+            src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80" 
+            alt="Concierto"
+          >
+        </div>
+      </div>
+    </section>
 
-    <div class="inicio-imagen">
-      <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80" alt="Concierto">
-    </div>
-  </div>
-</section>
+    <section id="productos" class="tab-content">
+      <div id="encabezado-conciertos" class="encabezado-conciertos">
 
+        <div class="encabezado-texto">
+          <h2>Conciertos disponibles</h2>
+        </div>
 
+        <div class="buscador-conciertos">
+          <input 
+            type="text" 
+            id="busqueda"
+            placeholder="Buscar artista, recinto o ciudad..."
+          >
+          <button id="btn-buscar">🔍 Buscar</button>
+        </div>
 
-<section id="productos" class="tab-content">
-<div id="encabezado-conciertos" class="encabezado-conciertos">
+      </div>
 
-  <div class="encabezado-texto">
-    <h2>Conciertos disponibles</h2>
-  </div>
-
-  <div class="buscador-conciertos">
-    <input type="text" id="busqueda"
-      placeholder="Buscar artista, recinto o ciudad...">
-    <button id="btn-buscar"> 🔍 Buscar</button>
-  </div>
-
-</div>
-
-  <div id="lista-productos" class="productos-grid"></div>
-</section>
+      <div id="lista-productos" class="productos-grid"></div>
+    </section>
 
     <section id="agregar" class="tab-content">
       <h2>Agregar concierto</h2>
-      <p>Registra conciertos con artista, precio, recinto, ciudad y boletos disponibles.</p>
+      <p>Registra conciertos con artista, precios por sección, recinto, ciudad y boletos disponibles.</p>
 
       <form id="form-producto" class="formulario">
         <input type="hidden" id="producto-id">
@@ -69,13 +73,13 @@
 
         <label for="fecha">Fecha del concierto</label>
         <input type="date" id="fecha" required>
-        
+
         <label for="ciudad">Ciudad</label>
         <input type="text" id="ciudad" placeholder="Ejemplo: Ciudad de México" required>
-      
+
         <label for="recinto">Recinto</label>
         <input type="text" id="recinto" placeholder="Ejemplo: Estadio GNP Seguros" required>
-              
+
         <label for="stock">Boletos disponibles</label>
         <input type="number" id="stock" placeholder="Ejemplo: 5000" min="0" required>
 
@@ -88,12 +92,13 @@
         <label for="precio-vip">Precio VIP</label>
         <input type="number" id="precio-vip" placeholder="Ejemplo: 6000" min="1" required>
 
-<label for="imagen">Imagen del concierto</label>
-<input 
-  type="url" 
-  id="imagen" 
-  placeholder="Pega la URL de la imagen"
->
+        <label for="imagen">Imagen del concierto</label>
+        <input 
+          type="url" 
+          id="imagen" 
+          placeholder="Pega la URL de la imagen"
+        >
+
         <button type="submit" id="btn-guardar">Guardar concierto</button>
       </form>
 
@@ -107,9 +112,9 @@
     <section id="estadisticas" class="tab-content">
       <div class="titulo-seccion">
         <div class="dashboard-encabezado">
-         <h2>Dashboard TicketLive</h2>
-         <p>Consulta indicadores generales sobre conciertos, boletos, precios, recintos y ciudades.</p>
-      </div>
+          <h2>Dashboard TicketLive</h2>
+          <p>Consulta indicadores generales sobre conciertos, boletos, precios, recintos y ciudades.</p>
+        </div>
 
         <button id="btn-estadisticas">Ver estadísticas</button>
       </div>
@@ -130,7 +135,7 @@
       <pre>
 app.js
 controllers/productos.controller.js
-data/productos.json
+data/concierto.json
 models/producto.model.js
 public/index.html
 public/script.js
