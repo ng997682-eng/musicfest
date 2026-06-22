@@ -17,7 +17,6 @@
     <button class="tab active" data-tab="inicio">🏠 Inicio</button>
     <button class="tab" data-tab="productos">🎤 Conciertos</button>
     <button class="tab" data-tab="agregar">➕ Agregar</button>
-    <button class="tab" data-tab="buscar">🔎 Buscar</button>
     <button class="tab" data-tab="estadisticas">📊 Dashboard</button>
     <button class="tab" data-tab="acerca">ℹ️ Acerca del sistema</button>
   </nav>
@@ -50,16 +49,19 @@
 </section>
 
 
-    <section id="productos" class="tab-content">
-      <div class="titulo-seccion">
-        <div>
-          <div id="encabezado-conciertos">
-            <h2>Conciertos registrados</h2>
-            <p>Consulta los conciertos disponibles, artistas, recintos, ciudades y boletos registrados en el sistema.</p>
-      </div>
+<section id="productos" class="tab-content">
+  <div id="encabezado-conciertos" class="encabezado-conciertos">
+    <h2>Conciertos disponibles</h2>
+    <p>Busca por artista, recinto o ciudad.</p>
 
-      <div id="lista-productos" class="productos-grid"></div>
-    </section>
+    <div class="buscador-conciertos">
+      <input type="text" id="busqueda" placeholder="Buscar artista, recinto o ciudad...">
+      <button id="btn-buscar">Buscar</button>
+    </div>
+  </div>
+
+  <div id="lista-productos" class="productos-grid"></div>
+</section>
 
     <section id="agregar" class="tab-content">
       <h2>Agregar concierto</h2>
@@ -97,18 +99,6 @@
       </button>
 
       <p id="mensaje"></p>
-    </section>
-
-    <section id="buscar" class="tab-content">
-      <h2>Buscar concierto</h2>
-      <p>Busca conciertos por artista, recinto o ciudad.</p>
-
-      <div class="barra-busqueda">
-        <input type="text" id="busqueda" placeholder="Ejemplo: Shakira o Estadio GNP">
-        <button id="btn-buscar">Buscar</button>
-      </div>
-
-      <div id="resultados-busqueda" class="productos-grid"></div>
     </section>
 
     <section id="estadisticas" class="tab-content">
