@@ -24,13 +24,6 @@ let productos = [];
 
 // 2. Navegación por pestañas
 function cambiarPestana(idContenido) {
-  document.getElementById("productos").classList.remove("vista-activa");
-  listaProductos.className = "productos-grid";
-
-  if (encabezadoConciertos) {
-    encabezadoConciertos.style.display = "block";
-  }
-
   tabs.forEach(t => t.classList.remove("active"));
   contenidos.forEach(c => c.classList.remove("active"));
 
