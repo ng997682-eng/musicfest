@@ -102,40 +102,46 @@ function verInformacion(id) {
     return;
   }
 
-  listaProductos.className = "productos-grid vista-detalle";
+  listaProductos.className = "vista-detalle";
   encabezadoConciertos.style.display = "none";
+
   listaProductos.innerHTML = `
     <article class="detalle-concierto">
       <h2>${producto.nombre}</h2>
 
-      <div class="detalle-contenido">
-        <div class="detalle-botones">
-          
-          <button class="btn-editar" type="button" onclick="editarProducto(${producto.id})">
-            Editar concierto
-          </button>
+      <img src="${producto.imagen || 'img/concierto.jpg'}" alt="${producto.nombre}" class="img-detalle">
 
-          <button class="btn-stock" type="button" onclick="actualizarStock(${producto.id})">
-            Actualizar boletos
-          </button>
-
-          <button class="btn-eliminar" type="button" onclick="eliminarProducto(${producto.id})">
-            Eliminar concierto
-          </button>
-        </div>
-
-        <div class="detalle-info">
-          <img src="${producto.imagen || 'img/concierto.jpg'}" alt="${producto.nombre}" class="img-detalle">
-
-          <p><strong>General:</strong> $${producto.precios?.general || producto.precio}</p>
-          <p><strong>Preferente:</strong> $${producto.precios?.preferente || producto.precio}</p>
-          <p><strong>VIP:</strong> $${producto.precios?.vip || producto.precio}</p>
+      <div class="detalle-tarjetas">
+        <div class="detalle-card">
+          <h3>Información general</h3>
           <p><strong>Fecha:</strong> ${producto.fecha || "No registrada"}</p>
           <p><strong>Recinto:</strong> ${producto.recinto || "No registrado"}</p>
           <p><strong>Ciudad:</strong> ${producto.ciudad || "No registrada"}</p>
           <p><strong>Boletos disponibles:</strong> ${producto.stock}</p>
         </div>
+
+        <div class="detalle-card">
+          <h3>Precios</h3>
+          <p><strong>General:</strong> $${producto.precios?.general || producto.precio}</p>
+          <p><strong>Preferente:</strong> $${producto.precios?.preferente || "No registrado"}</p>
+          <p><strong>VIP:</strong> $${producto.precios?.vip || "No registrado"}</p>
+        </div>
       </div>
+
+      <div class="detalle-botones">
+        <button class="btn-editar" type="button" onclick="editarProducto(${producto.id})">
+          Editar concierto
+        </button>
+
+        <button class="btn-stock" type="button" onclick="actualizarStock(${producto.id})">
+          Actualizar boletos
+        </button>
+
+        <button class="btn-eliminar" type="button" onclick="eliminarProducto(${producto.id})">
+          Eliminar concierto
+        </button>
+      </div>
+
       <button type="button" class="btn-regresar" onclick="encabezadoConciertos.style.display='block'; mostrarProductos(productos, listaProductos)">
         ← Regresar
       </button>

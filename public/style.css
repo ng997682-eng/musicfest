@@ -319,17 +319,18 @@ button:hover {
 }
 
 /* VISTA DETALLE */
-#lista-productos.vista-detalle {
+#lista-productos.vista-detalle,
+.vista-detalle {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  width: 100%;
-  min-height: 620px;
+  width: 100% !important;
+  min-height: 650px;
 }
 
 .detalle-concierto {
-  width: 650px;
-  max-width: 90%;
+  width: 760px;
+  max-width: 92%;
   margin: 40px auto;
   padding: 28px;
   background: #fff0f7;
@@ -341,7 +342,42 @@ button:hover {
 .detalle-concierto h2 {
   color: #b03060;
   font-size: 2.4rem;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
+}
+
+.img-detalle {
+  width: 100%;
+  max-width: 560px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 22px;
+}
+
+.detalle-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.detalle-card {
+  background: white;
+  border: 1px solid #f3bfd4;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 5px 14px rgba(176, 48, 96, 0.12);
+}
+
+.detalle-card h3 {
+  color: #b03060;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.detalle-card p {
+  font-size: 15px;
+  margin: 8px 0;
 }
 
 .detalle-botones {
@@ -352,24 +388,27 @@ button:hover {
   margin-bottom: 18px;
 }
 
-.img-detalle {
-  width: 100%;
-  height: 390px;
-  object-fit: cover;
+.detalle-botones button {
+  min-width: 170px;
+  padding: 10px 14px;
   border-radius: 20px;
-  margin-bottom: 18px;
-}
-
-.detalle-info p {
-  font-size: 16px;
-  margin: 8px 0;
 }
 
 .btn-regresar {
   display: block;
   width: 180px;
-  margin: 20px auto 0;
+  margin: 0 auto;
   background: #b03060;
+}
+
+.btn-regresar:hover {
+  background: #8e254c;
+}
+
+@media (max-width: 700px) {
+  .detalle-tarjetas {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* PRE */
