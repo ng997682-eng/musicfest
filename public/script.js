@@ -107,7 +107,6 @@ function verInformacion(id) {
     return;
   }
 
-  cambiarPestana("productos");
 
   listaProductos.className = "productos-grid vista-detalle";
   document.getElementById("productos").classList.add("vista-activa");
@@ -184,6 +183,8 @@ function editarProducto(id) {
   document.getElementById("ciudad").value = producto.ciudad || "";
   document.getElementById("imagen").value = producto.imagen || "";
   document.getElementById("stock").value = producto.stock;
+  document.getElementById("productos").classList.remove("vista-activa");
+listaProductos.className = "productos-grid";
 
   btnGuardar.textContent = "Actualizar concierto";
   mensaje.textContent = "Editando concierto. Modifica los datos y guarda los cambios.";
