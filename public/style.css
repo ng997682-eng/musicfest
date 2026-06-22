@@ -432,4 +432,11 @@ pre {
   .img-concierto {
     height: 320px;
   }
+
+  #productos.tab-content.active.vista-activa {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+
 }
