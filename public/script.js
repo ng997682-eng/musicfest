@@ -329,18 +329,20 @@ formProducto.addEventListener("submit", async event => {
 
     mensaje.className = "mensaje-exito";
 
-   formProducto.reset();
-   productoId.value = "";
-   btnGuardar.textContent = "Guardar concierto";
+const idEditado = id ? Number(id) : null;
 
-   const productosActualizados = await fetch("/productos");
-   productos = await productosActualizados.json();
+formProducto.reset();
+productoId.value = "";
+btnGuardar.textContent = "Guardar concierto";
 
-   cambiarPestana("productos");
+const respuestaActualizada = await fetch("/productos");
+productos = await respuestaActualizada.json();
 
-if (id) {
-  verInformacion(Number(id));
+if (idEditado) {
+  cambiarPestana("productos");
+  verInformacion(idEditado);
 } else {
+  cambiarPestana("productos");
   mostrarProductos(productos, listaProductos);
 }
 
