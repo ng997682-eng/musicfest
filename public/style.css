@@ -116,8 +116,16 @@ body {
 }
 
 .encabezado-conciertos {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
   margin-bottom: 28px;
+}
+
+.encabezado-texto {
+  text-align: left;
 }
 
 .encabezado-conciertos h2 {
@@ -126,20 +134,23 @@ body {
   margin: 0 0 8px;
 }
 
-.encabezado-conciertos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.encabezado-texto {
-  text-align: left;
-}
-
 .buscador-conciertos {
   display: flex;
+  justify-content: flex-end;
   gap: 10px;
+  margin-left: auto;
+}
+
+.buscador-conciertos input {
+  width: 420px;
+  border-radius: 999px;
+  padding: 16px 22px;
+}
+
+.buscador-conciertos button {
+  border-radius: 999px;
+  padding: 14px 24px;
+  background: #b03060;
 }
 
 .productos-grid {
