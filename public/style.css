@@ -5,13 +5,12 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, #fff0f6, #f8c8dc, #f3a6c9);
+  background: #f8c8dc;
   color: #430720;
 }
 
-/* ENCABEZADO */
 .encabezado {
-  background: linear-gradient(135deg, #d94f8a, #f7a8c8);
+  background: linear-gradient(135deg, #b03060, #d94f8a);
   color: white;
   padding: 35px 20px;
   text-align: center;
@@ -26,7 +25,6 @@ body {
   margin: 0;
 }
 
-/* MENÚ */
 .tabs {
   display: flex;
   justify-content: center;
@@ -40,59 +38,61 @@ body {
   padding: 10px 18px;
   border: none;
   background: #f7c2da;
-  color: white;
+  color: #430720;
   cursor: pointer;
   border-radius: 12px;
   font-weight: bold;
 }
 
 .tab.active {
-  background: #d94f8a;
+  background: #b03060;
+  color: white;
 }
 
-/* CONTENEDOR */
 .contenedor {
   max-width: 100%;
   margin: 20px auto;
-  padding: 0 10px;
+  padding: 0 14px;
 }
 
 .tab-content {
   display: none;
-  background: linear-gradient(135deg, #fff0f7, #ffe1ec);
-  padding: 40px;
-  border-radius: 18px;
+  background: #fff0f7;
+  padding: 32px;
+  border-radius: 20px;
 }
 
 .tab-content.active {
   display: block;
 }
 
-/* INICIO */
-.inicio-ticket {
-  min-height: 620px;
+.inicio-ticket,
+.inicio-simple {
+  min-height: 520px;
+  text-align: center;
 }
 
 .inicio-contenido {
   max-width: 950px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .inicio-label {
   color: #b03060;
   font-weight: bold;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-.inicio-ticket h2 {
-  font-size: 3.6rem;
+.inicio-ticket h2,
+.inicio-simple h2 {
+  font-size: 3rem;
   color: #430720;
-  margin: 15px 0;
+  margin: 18px 0;
 }
 
-.inicio-descripcion {
+.inicio-descripcion,
+.inicio-simple p {
   font-size: 1.25rem;
   line-height: 1.7;
   color: #5a1b34;
@@ -102,7 +102,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-top: 25px;
+  margin-top: 26px;
   flex-wrap: wrap;
 }
 
@@ -115,7 +115,6 @@ body {
   color: #b03060;
 }
 
-/* BUSCADOR EN CONCIERTOS */
 .encabezado-conciertos {
   text-align: center;
   margin-bottom: 28px;
@@ -123,8 +122,8 @@ body {
 
 .encabezado-conciertos h2 {
   color: #b03060;
-  font-size: 2.6rem;
-  margin-bottom: 8px;
+  font-size: 2.5rem;
+  margin: 0 0 8px;
 }
 
 .buscador-conciertos {
@@ -145,7 +144,6 @@ body {
   background: #b03060;
 }
 
-/* TARJETAS */
 .productos-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -179,11 +177,10 @@ body {
   display: block;
   width: 70%;
   margin: 18px auto 22px;
-  background-color: #b03060;
+  background: #b03060;
   padding: 10px 16px;
 }
 
-/* FORMULARIO */
 .formulario {
   display: grid;
   gap: 14px;
@@ -192,7 +189,10 @@ body {
 }
 
 #agregar h2,
-#agregar p {
+#agregar p,
+#estadisticas h2,
+#estadisticas p,
+#acerca h2 {
   text-align: center;
 }
 
@@ -209,7 +209,6 @@ input {
   width: 100%;
 }
 
-/* BOTONES */
 button {
   padding: 8px 12px;
   border: none;
@@ -218,6 +217,10 @@ button {
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
+}
+
+button:hover {
+  background: #e06c99;
 }
 
 .formulario button {
@@ -230,18 +233,17 @@ button {
 }
 
 .btn-editar {
-  background-color: #d94f8a;
+  background: #d94f8a;
 }
 
 .btn-stock {
-  background-color: #f39c12;
+  background: #f39c12;
 }
 
 .btn-eliminar {
-  background-color: #e74c3c;
+  background: #e74c3c;
 }
 
-/* MENSAJES */
 #mensaje {
   margin-top: 16px;
   font-weight: bold;
@@ -264,7 +266,6 @@ button {
   border-left: 5px solid #e53e3e;
 }
 
-/* DASHBOARD */
 #resumen-estadisticas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -281,7 +282,6 @@ button {
   border: 1px solid #f3a6c9;
   border-radius: 18px;
   padding: 22px;
-  box-shadow: 0 6px 16px rgba(217, 79, 138, 0.18);
 }
 
 .dashboard-principal {
@@ -289,11 +289,15 @@ button {
   color: white;
 }
 
-/* DETALLE */
+.numero-dashboard {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
 #productos.vista-activa {
   display: flex !important;
   flex-direction: column;
-  align-items: center !important;
+  align-items: center;
 }
 
 #lista-productos.vista-detalle {
@@ -305,7 +309,7 @@ button {
 .detalle-concierto {
   width: 900px;
   max-width: 95%;
-  margin: 40px auto !important;
+  margin: 40px auto;
   padding: 32px;
   background: #fff0f7;
   border-radius: 28px;
@@ -368,7 +372,14 @@ button {
   background: #b03060;
 }
 
-/* RESPONSIVE */
+pre {
+  background: #450427;
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
 @media (max-width: 1200px) {
   .productos-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -376,10 +387,7 @@ button {
 }
 
 @media (max-width: 800px) {
-  #resumen-estadisticas {
-    grid-template-columns: 1fr;
-  }
-
+  #resumen-estadisticas,
   .detalle-tarjetas {
     grid-template-columns: 1fr;
   }
@@ -394,7 +402,12 @@ button {
     flex-direction: column;
   }
 
-  .inicio-ticket h2 {
+  .inicio-ticket h2,
+  .inicio-simple h2 {
     font-size: 2.3rem;
+  }
+
+  .img-concierto {
+    height: 320px;
   }
 }
