@@ -456,14 +456,22 @@ pre {
   align-items: center;
 }
 
+#productos {
+  position: relative;
+  min-height: 720px;
+}
+
 #lista-productos.vista-detalle {
-  display: flex !important;
-  justify-content: center !important;
-  width: 100% !important;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 760px !important;
+  max-width: 90% !important;
+  display: block !important;
 }
 
 #lista-productos.vista-detalle .detalle-concierto {
-  margin-left: auto !important;
-  margin-right: auto !important;
+  width: 100% !important;
+  margin: 40px auto !important;
 }
 }
