@@ -433,24 +433,23 @@ pre {
     height: 320px;
   }
 
-  .inicio-ticket {
-  background: linear-gradient(135deg, #ffe4ef, #ffc1d9, #f78ab8);
+.inicio-ticket {
+  background: linear-gradient(135deg, #ffe1ee, #ffc1dc, #f68fbd);
   border-radius: 18px;
   padding: 45px;
   min-height: 520px;
-  overflow: hidden;
 }
 
 .inicio-hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
   gap: 45px;
+  align-items: center;
 }
 
 .inicio-texto {
   text-align: left;
-  padding-left: 30px;
+  padding-left: 35px;
 }
 
 .inicio-label {
@@ -458,38 +457,32 @@ pre {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 15px;
 }
 
 .inicio-texto h2 {
-  font-size: 5.5rem;
-  line-height: 0.95;
-  margin: 0 0 25px;
+  font-size: 5.8rem;
+  line-height: 0.9;
+  margin: 15px 0 25px;
   color: #430720;
   text-transform: uppercase;
 }
 
 .inicio-descripcion {
   font-size: 1.2rem;
-  max-width: 520px;
   color: #5c1430;
   line-height: 1.6;
-  margin-bottom: 30px;
+  max-width: 520px;
 }
 
 .btn-inicio {
+  margin-top: 25px;
   background: #b03060;
   color: white;
   border: none;
   padding: 15px 28px;
   border-radius: 14px;
-  font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-}
-
-.btn-inicio:hover {
-  background: #d94f8a;
 }
 
 .inicio-imagen img {
@@ -497,21 +490,5 @@ pre {
   height: 390px;
   object-fit: cover;
   border-radius: 24px;
-  box-shadow: 0 20px 45px rgba(67, 7, 32, 0.35);
-}
-
-@media (max-width: 900px) {
-  .inicio-hero {
-    grid-template-columns: 1fr;
-  }
-
-  .inicio-texto {
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .inicio-texto h2 {
-    font-size: 3.8rem;
-  }
 }
 }
