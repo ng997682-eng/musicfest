@@ -59,9 +59,16 @@ body {
 /* CONTENEDOR */
 
 .contenedor {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0;
+  max-width: 96%;
+  margin: 28px auto;
+  padding: 0 24px;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  width: 100%;
 }
 
 .tab-content {
@@ -84,9 +91,6 @@ body {
   padding: 60px 80px;
   background: linear-gradient(135deg, #ffe1ee, #ffc1dc, #f68fbd);
 }
-
-
-
 
 
 .inicio-hero {
