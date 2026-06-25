@@ -83,20 +83,39 @@ body {
   display: block;
 }
 
-/* INICIO */
-
-.login-admin {
-  max-width: 420px;
-  margin: 25px auto;
-  padding: 24px;
-  background: #fff0f7;
-  border-radius: 24px;
-  box-shadow: 0 8px 22px rgba(176, 48, 96, 0.18);
-  text-align: center;
+.oculto {
+  display: none;
 }
 
-.login-admin input {
-  margin-bottom: 12px;
+.login-panel {
+  text-align: center;
+  min-height: 520px;
+}
+
+.login-opciones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.login-opciones button,
+.login-form button {
+  padding: 14px 28px;
+  border-radius: 999px;
+}
+
+.login-form {
+  max-width: 420px;
+  margin: 25px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 8px 22px rgba(176, 48, 96, 0.18);
+}
+
+.login-form input {
+  margin-bottom: 14px;
 }
 
 .solo-admin {
@@ -104,9 +123,10 @@ body {
 }
 
 body.admin-activo .solo-admin {
-  display: inline-block;
+  display: block;
 }
 
+/* INICIO */
 .inicio-ticket {
   min-height: calc(100vh - 230px);
   width: 100%;
@@ -520,4 +540,26 @@ pre {
   .img-concierto {
     height: 320px;
   }
+}
+
+.login-admin {
+  max-width: 420px;
+  margin: 25px auto;
+  padding: 24px;
+  background: #fff0f7;
+  border-radius: 24px;
+  box-shadow: 0 8px 22px rgba(176, 48, 96, 0.18);
+  text-align: center;
+}
+
+.login-admin input {
+  margin-bottom: 12px;
+}
+
+.solo-admin {
+  display: none;
+}
+
+body.admin-activo .solo-admin {
+  display: inline-block;
 }

@@ -14,7 +14,8 @@
   </header>
 
   <nav class="tabs">
-    <button class="tab active" data-tab="inicio">🏠 Inicio</button>
+    <button class="tab active" data-tab="login">🔐 Iniciar sesión</button>
+   <button class="tab" data-tab="inicio">🏠 Inicio</button>
     <button class="tab" data-tab="productos">🎤 Conciertos</button>
     <button class="tab solo-admin" data-tab="agregar">➕ Agregar</button>
     <button class="tab solo-admin" data-tab="estadisticas">📊 Dashboard</button>
@@ -30,6 +31,46 @@
   <button type="button" onclick="iniciarSesionAdmin()">
     Iniciar sesión
   </button>
+
+  <p id="mensaje-login"></p>
+</section>
+
+<section id="login" class="tab-content active login-panel">
+  <h2>Iniciar sesión</h2>
+  <p>Selecciona el tipo de acceso</p>
+
+  <div class="login-opciones">
+    <button type="button" onclick="mostrarLoginUsuario()">Usuario</button>
+    <button type="button" onclick="mostrarLoginAdmin()">Administrador</button>
+  </div>
+
+  <div id="login-usuario" class="login-form oculto">
+    <h3>Acceso de usuario</h3>
+
+    <button type="button" onclick="mostrarCrearCuenta()">Crear cuenta</button>
+    <button type="button" onclick="mostrarIniciarUsuario()">Iniciar sesión</button>
+  </div>
+
+  <div id="form-crear-cuenta" class="login-form oculto">
+    <h3>Crear cuenta</h3>
+    <input type="text" id="nuevo-usuario" placeholder="Nombre de usuario">
+    <input type="password" id="nueva-password" placeholder="Contraseña">
+    <button type="button" onclick="crearCuentaUsuario()">Crear cuenta</button>
+  </div>
+
+  <div id="form-login-usuario" class="login-form oculto">
+    <h3>Iniciar sesión como usuario</h3>
+    <input type="text" id="usuario-login" placeholder="Usuario">
+    <input type="password" id="password-login" placeholder="Contraseña">
+    <button type="button" onclick="iniciarSesionUsuario()">Entrar</button>
+  </div>
+
+  <div id="login-admin" class="login-form oculto">
+    <h3>Acceso administrador</h3>
+    <input type="text" id="usuario-admin" placeholder="Usuario administrador">
+    <input type="password" id="password-admin" placeholder="Contraseña">
+    <button type="button" onclick="iniciarSesionAdmin()">Entrar</button>
+  </div>
 
   <p id="mensaje-login"></p>
 </section>
