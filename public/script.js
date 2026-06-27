@@ -90,11 +90,20 @@ function mostrarPantallaPrincipal() {
 function mostrarIniciarUsuario() {
   ocultarFormsLogin();
   document.getElementById("form-login-usuario").classList.remove("oculto");
+  // Limpiar campos
+  document.getElementById("usuario-login").value  = "";
+  document.getElementById("password-login").value = "";
 }
 
 function mostrarCrearCuenta() {
   ocultarFormsLogin();
   document.getElementById("form-crear-cuenta").classList.remove("oculto");
+  // Limpiar campos
+  document.getElementById("nuevo-usuario").value  = "";
+  document.getElementById("nueva-password").value = "";
+  const ft = document.getElementById("fortaleza-password");
+  if (ft) ft.innerHTML = "";
+}
 
   // Escucha en tiempo real para el indicador de fortaleza
   const inputPass = document.getElementById("nueva-password");
@@ -108,6 +117,9 @@ function mostrarCrearCuenta() {
 function mostrarLoginAdmin() {
   ocultarFormsLogin();
   document.getElementById("login-admin").classList.remove("oculto");
+  // Limpiar campos
+  document.getElementById("usuario-admin").value  = "";
+  document.getElementById("password-admin").value = "";
 }
 
 function mostrarMensajeLogin(texto, tipo) {
