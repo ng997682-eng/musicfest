@@ -302,10 +302,12 @@ function verInformacion(id) {
         </div>
       </div>
 
-      <!-- BOTÓN COMPRAR (usuarios) -->
-      <button class="btn-comprar" type="button" onclick="abrirModalCompra(${producto.id})">
-        🎟️ Comprar boletos
-      </button>
+    <!-- BOTÓN COMPRAR (solo usuarios, no admin) -->
+     ${!usuarioActual?.esAdmin ? `
+     <button class="btn-comprar" type="button" onclick="abrirModalCompra(${producto.id})">
+      🎟️ Comprar boletos
+    </button>
+  ` : ""}
 
       <!-- CONTROLES ADMIN -->
       <button class="btn-editar solo-admin"   type="button" onclick="editarProducto(${producto.id})">Editar concierto</button>
